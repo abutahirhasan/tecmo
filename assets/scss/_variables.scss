@@ -1,0 +1,76 @@
+
+:root {
+    
+    --body: #fff;
+    --black: #090F1F;
+    --white: #fff;
+    --p1-clr: #83CD8F;
+    --p2-clr: #FED500;
+    --p3-clr: #B29AFF;
+    --blogbox: #EFEFEF;
+    --cmnbg: #EBF3F6;
+    --n100-clr: #EEF6E7;
+    --n200-clr: rgba(221, 221, 221, 1);
+    --n300-clr: #FFFADE;
+    --n400-clr: #F5E0FA;
+    --n700-clr: rgba(36, 36, 38, 1);
+    --n800-clr: rgba(49, 49, 49, 1);
+    --n900-clr: #090F1F;
+    --theme: rgba(32, 109, 255, 1);
+    --pra: #2C3347;
+    --pra2: #DDD;
+    --text: #313131;
+    --cmnwhite: #CBCBCC;
+
+    --theme2: #70A6B1;
+    --header: #385469;
+    --text-2: #ffffffcc;
+    --border: #E3E3E3;
+    --border2: #242449;
+    --border3: #5262FF;
+    --bg: #F4EEE5;
+    --bg2: #EFF5F6;
+    --bg3: #70A6B1;
+    --box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+
+}
+
+// Theme Color - Defualt Colors
+$p1-clr: var(--p1-clr);
+$p2-clr: var(--p2-clr);
+$p3-clr: var(--p3-clr);
+$p4-clr: var(--p4-clr);
+$p5-clr: var(--p5-clr);
+$cmnbg: var(--cmnbg);
+$blogbox: var(--blogbox);
+$n100-clr: var(--n100-clr);
+$n200-clr: var(--n200-clr);
+$n300-clr: var(--n300-clr);
+$n400-clr: var(--n400-clr);
+$n700-clr: var(--n700-clr);
+$n800-clr: var(--n800-clr);
+$n900-clr: var(--n900-clr);
+$pra: var(--text);
+$pra2: var(--pra2);
+$cmn-white: var(--cmnwhite);
+
+$black: var(--black);
+$white: var(--white);
+$theme: var(--theme);
+$theme2: var(--theme2);
+$theme-color: var(--theme);
+$theme-color-2: var(--theme2);
+$text: var(--text);
+$text-color: var(--text);
+$text-color-2: var(--text-2);
+$header: var(--header);
+$header-color: var(--header);
+$border-color: var(--border);
+$border-color-2: var(--border2);
+$border-color-3: var(--border3);
+$bg-color: var(--bg);
+$n900-bg: var(--n900-clr);
+$bg-color-2: var(--bg2);
+$bg-color-3: var(--bg3);
+$shadow: var(--box-shadow);
+

@@ -1,0 +1,139 @@
+//about one
+.about-section {
+	.about-wrapper {
+		background: $n100-clr;
+		border-radius: 30px;
+		max-width: 1730px;
+		margin: 0 auto;
+	}
+	.about-thumb {
+		background: rgb(255, 255, 255, 0.5);
+		border-radius: 30px;
+		padding: 40px 30px;
+		.about-ele {
+			position: absolute;
+			right: 110px;
+			top: 130px;
+		}
+		@include breakpoint(max-md) {
+			padding: 16px 16px;
+			.about-ele {
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+	&.about-style2 {
+		.about-wrapper {
+			background: $n900-bg;
+			.about-information2 {
+				.about-info-box {
+					p {
+						color: rgb(255, 255, 255, 0.8);
+					}
+				}
+				.line {
+					width: 100%;
+					height: 1px;
+					background: #151b2a;
+				}
+			}
+		}
+	}
+}
+.about-content {
+	.about-information {
+		background: $white;
+		padding: 30px 40px;
+		border-radius: 30px;
+		margin-bottom: 40px;
+		.about-info {
+			.icon {
+				width: 60px;
+				min-width: 60px;
+				height: 60px;
+				border-radius: 50%;
+			}
+		}
+		.line {
+			width: 100%;
+			height: 1px;
+			background: $border-color;
+		}
+		@include breakpoint(max-lg) {
+			padding: 24px 24px;
+			margin-bottom: 26px;
+		}
+	}
+}
+
+@keyframes updown {
+	50% {
+		transform: translateY(-15px);
+	}
+}
+@keyframes rots {
+	50% {
+		transform: rotate(7deg);
+	}
+}
+
+//Counter Custom
+.custom-counter-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	z-index: 1;
+	padding: 40px 60px;
+	transform: translateY(80px);
+	margin-top: -80px;
+	position: relative;
+	.custom-counter-item {
+		h2,
+		span {
+			font-size: 50px;
+			font-weight: 700;
+			color: $n900-clr;
+		}
+	}
+	.line {
+		width: 1px;
+		height: 90px;
+		background: $n900-clr;
+	}
+	@include breakpoint(max-lg) {
+		padding: 20px 20px;
+		transform: translateY(0px);
+		margin-top: 0px;
+		position: relative;
+		.custom-counter-item {
+			h2,
+			span {
+				font-size: 34px;
+				font-weight: 700;
+				color: $n900-clr;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		padding: 20px 20px;
+		transform: translateY(0px);
+		margin-top: 0px;
+		position: relative;
+		gap: 12px 24px;
+		justify-content: center;
+		.custom-counter-item {
+			h2,
+			span {
+				font-size: 34px;
+				font-weight: 700;
+				color: $n900-clr;
+			}
+		}
+		.line{
+			display: none;
+		}
+	}
+}
+//Counter Custom

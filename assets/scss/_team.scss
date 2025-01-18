@@ -1,0 +1,174 @@
+//Team Member Section
+.team-member-wrapper {
+	display: grid;
+	gap: 24px;
+	.team-member-item {
+		background: $white;
+		padding: 40px 40px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 16px;
+		position: relative;
+		.title-ara {
+			min-width: 260px;
+		}
+		.middle-pra {
+			max-width: 477px;
+		}
+		.social-wrapper {
+			a {
+				width: 38px;
+				height: 38px;
+				background: $n100-clr;
+				i {
+					color: $black;
+				}
+				&:hover {
+					background: $p1-clr;
+				}
+			}
+		}
+		.team-ele {
+			position: absolute;
+			right: 280px;
+			top: 50%;
+			transform: translateY(-50%) rotate(20deg) scale(0);
+		}
+		transition: all 0.5s;
+		&:hover {
+			background: $p1-clr;
+			.team-ele {
+				transform: translateY(-50%) rotate(20deg) scale(1);
+			}
+			.title-ara {
+				h3,
+				a,
+				p {
+					color: $white;
+				}
+			}
+			.middle-pra {
+				color: $white;
+			}
+		}
+		@include breakpoint(max-lg) {
+			padding: 30px 20px;
+			flex-wrap: wrap;
+			display: grid;
+			text-align: center;
+			.middle-pra {
+				max-width: 100%;
+			}
+			.title-ara {
+				min-width: initial;
+			}
+		}
+	}
+}
+//team section two
+.team-section2 {
+	position: relative;
+	z-index: 1;
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		content: "";
+		width: 100%;
+		height: 60%;
+		max-width: 1730px;
+		margin: 0 auto;
+		background: $n100-clr;
+		border-radius: 30px;
+	}
+}
+.team-inner {
+	.team-cus-item {
+		border: 2px solid $p3-clr;
+		border-radius: 20px;
+		width: 100%;
+		position: relative;
+		display: block;
+		img {
+			border-radius: 20px;
+			width: 100%;
+		}
+		.contnet {
+			position: absolute;
+			top: 20px;
+			left: 22px;
+		}
+		&:hover {
+			border-color: $p1-clr;
+			.contnet {
+				h3 {
+					color: $p1-clr;
+				}
+			}
+		}
+	}
+}
+//Team Member Section
+
+//Story Section
+.story-section {
+	.testimonial-items2 {
+		margin: 0;
+		.thumb {
+			max-width: 360px;
+			height: 360px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+		@include breakpoint(max-xl) {
+			.thumb {
+				max-width: 360px;
+				height: 320px;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+//Story Section
+
+//Story Details Section
+.story-section-details{
+	.testimonial-items2{
+		padding: 50px 60px 60px;
+		margin: 0;
+		.quote2{
+			margin-top: 0;
+		}
+		h3{
+			font-size: 42px;
+		}
+		@include breakpoint(max-lg){
+			flex-wrap: wrap;
+			gap: 24px;
+			padding: 24px 20px 30px;
+			h3{
+				font-size: 24px;
+			}
+			.thumb{
+				width: 100%;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+//Story Details Section

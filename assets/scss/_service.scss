@@ -1,0 +1,66 @@
+//gateway section
+.gateway-section {
+	.array-button {
+		button {
+			border: unset;
+			// background: rgba(37, 37, 37, 0.05);
+			background: #f4f1fb;
+			i {
+				color: $black;
+				font-size: 16px;
+			}
+			&:hover {
+				background: $p2-clr;
+			}
+		}
+	}
+}
+.gateway-items {
+	position: relative;
+	.content {
+		padding: 20px 28px 28px;
+		position: absolute;
+		bottom: 18px;
+		right: 18px;
+		max-width: 303px;
+		@include breakpoint(max-md) {
+			padding: 14px 16px 18px;
+			max-width: 250px;
+		}
+	}
+}
+//gateway section
+
+//Student Service
+.student-service-item {
+	.thumb {
+		img {
+			transition: all 0.5s;
+		}
+	}
+	.student-ser-cont {
+		padding: 26px 26px 30px;
+		width: 80%;
+		margin: -100px auto 0;
+		position: relative;
+		p {
+			max-width: 270px;
+			margin: 0 auto;
+		}
+	}
+	&:hover {
+		.thumb {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.student-ser-cont {
+			padding: 24px 16px 16px;
+			width: 100%;
+			margin: 10px auto 0;
+		}
+	}
+}
+//Student Service

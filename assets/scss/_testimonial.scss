@@ -1,0 +1,147 @@
+//Testimonial
+.testimonial-items {
+	border-radius: 20px;
+	background: #fff;
+	padding: 36px 40px 106px;
+	position: relative;
+	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+	margin: 24px;
+	p {
+		line-height: 30px;
+	}
+	.testi-quote {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	@include breakpoint(max-md) {
+		padding: 28px 22px 100px;
+		margin: 0;
+		border: 1px solid $border-color;
+	}
+}
+.testimonial-thumb1 {
+	@include breakpoint(max-lg) {
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+}
+.testimonial-section {
+	position: relative;
+	z-index: 1;
+	.swiper-arrow-area1 {
+		position: absolute;
+		z-index: 9;
+		right: 220px;
+		bottom: 60px;
+		button {
+			svg {
+				path {
+					fill: #e6e7e9;
+					stroke: #e6e7e9;
+					transition: all 0.4s;
+				}
+				transition: all 0.4s;
+			}
+			&:hover {
+				svg {
+					path {
+						fill: $p1-clr;
+						stroke: $p1-clr;
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.swiper-arrow-area1 {
+			position: absolute;
+			z-index: 9;
+			right: initial;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 30px;
+			button {
+				svg {
+					width: 50px;
+				}
+			}
+		}
+	}
+}
+//Testimonial
+
+//Testimonial 02
+.testimonial-items2 {
+	border-radius: 20px;
+	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+	padding: 0px 0 0px 80px;
+	margin: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.quote2 {
+		margin-top: -60px;
+	}
+	.content {
+		max-width: 700px;
+		p {
+			font-size: 28px;
+			line-height: 38px;
+		}
+	}
+	.thumb {
+		max-width: 400px;
+		img {
+			width: 100%;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 20px 20px 20px 20px;
+		.quote2 {
+			margin-top: 0px;
+			width: 50px;
+		}
+		.content {
+			max-width: 500px;
+			p {
+				font-size: 18px;
+				line-height: 30px;
+			}
+		}
+	}
+}
+.custom-slide {
+	margin: -55px;
+	position: relative;
+	.array-button {
+		width: 96%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		button {
+			background: rgba(37, 37, 37, 0.05);
+			border-color: rgba(37, 37, 37, 0.05);
+			&:hover {
+				background: $p3-clr;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.array-button {
+			width: initial;
+			position: initial;
+			top: 50%;
+			left: 50%;
+			transform: translate(-0%, -0%);
+			z-index: 1;
+		}
+	}
+}
+
+//Testimonial 02

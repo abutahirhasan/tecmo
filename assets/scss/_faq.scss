@@ -1,0 +1,256 @@
+.faq-left {
+	.nav {
+		display: grid;
+
+		@include breakpoint(max-lg) {
+			@include flex;
+			gap: 10px;
+			justify-content: center;
+		}
+
+		.nav-link {
+			font-weight: 700;
+			font-size: 18px;
+			text-transform: capitalize;
+			color: $header-color;
+
+			&.active {
+				color: $p2-clr;
+			}
+		}
+	}
+}
+
+//Accordion
+.accordion-button:not(.collapsed) {
+	inset: 0 !important;
+	box-shadow: none !important;
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: unset;
+	outline: 0;
+	box-shadow: none;
+}
+//Accordion
+.accordion-item {
+	border: unset;
+	.accordion-header {
+		.accordion-button {
+			padding: 4px 0 4px 24px;
+			background: transparent;
+			outline: none;
+			font-size: 24px;
+			font-weight: 700;
+			color: $black;
+			border-radius: 0;
+			border-left: 3px solid $border-color;
+			font-family: "Space Grotesk";
+			&::after {
+				content: "\2b";
+				font-family: "Font Awesome 6 Free";
+				background: transparent;
+				font-weight: 700;
+				transition: all 0.3s ease-in-out !important;
+				color: $p1-clr;
+				font-size: 28px;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $n100-clr;
+			}
+			&:not(.collapsed)::after {
+				content: "\2b";
+				font-family: "Font Awesome 6 Free";
+				background: transparent;
+				font-weight: 700;
+				transition: all 0.3s ease-in-out !important;
+				color: $black;
+				font-size: 28px;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $p1-clr;
+				transform: rotate(0);
+			}
+			&:not(.collapsed) {
+				border-color: $p1-clr;
+			}
+		}
+	}
+	.accordion-body {
+		padding: 0;
+		padding-left: 24px;
+		padding-top: 8px;
+		border-left: 3px solid $border-color;
+		p {
+			font-size: 16px;
+			color: $pra;
+		}
+	}
+	.accordion-collapse {
+		&.show {
+			.accordion-body {
+				border-color: $p1-clr;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.accordion-header {
+			.accordion-button {
+				padding: 4px 0 4px 14px;
+				font-size: 20px;
+				font-weight: 700;
+				&::after {
+					font-size: 20px;
+				}
+			}
+		}
+		.accordion-body {
+			padding-left: 14px;
+			padding-top: 6px;
+			p {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+//faq-getway
+.faq-getway {
+	.accordion-item {
+		border-radius: 100px;
+		.accordion-header {
+			.accordion-button {
+				padding: 10px 24px;
+				border-radius: 100px;
+				border: 1px solid #090f1f;
+				&:not(.collapsed) {
+					border-color: $p1-clr;
+				}
+			}
+		}
+		.accordion-body {
+			padding: 0;
+			padding-left: 0px;
+			padding-top: 8px;
+			border-left: unset;
+			p {
+				font-size: 16px;
+				color: $pra;
+			}
+		}
+		.accordion-collapse {
+			&.show {
+				.accordion-body {
+					border-color: $p1-clr;
+				}
+			}
+		}
+	}
+}
+
+.portfolio-diversifed{
+	padding: 0 60px;
+	@include breakpoint(max-xl){
+		padding: 0 10px;
+		.portfolio-video{
+			width: 60px;
+			height: 60px;
+			i{
+				font-size: 18px;
+			}
+		}
+	}
+	@include breakpoint(max-sm){
+		padding: 0 10px;
+		img{
+			height: 250px;
+		}
+		.portfolio-video{
+			width: 60px;
+			height: 60px;
+			i{
+				font-size: 18px;
+			}
+		}
+	}
+}
+.portfolio-video{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    background: $p1-clr;
+    z-index: 1;
+    i{
+        font-size: 28px;
+        color: $black;
+    }
+    &::before,
+    &::after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        border: 1px solid $p1-clr;
+        border-radius: 50%;
+    }
+    &::before{
+        transition: all 0.3s;
+        animation: scsl 2s linear infinite;
+    }
+    &::after{
+        transition: all 0.4s;
+        animation: scsl2 3s linear infinite; 
+    }
+}
+@keyframes scsl{
+    50%{
+        transform: scale(1.05);
+        opacity: 1;
+    }   
+    60%{
+        transform: scale(1.09);
+        opacity: 0.6;
+    }   
+    80%{
+        transform: scale(1.1);
+        opacity: 0.3;
+    }   
+    90%{
+        transform: scale(1.2);
+        opacity: 0.2;
+    }   
+    100%{
+        transform: scale(1.3);
+        opacity: 0;
+    }   
+}
+@keyframes scsl2{
+    50%{
+        transform: scale(1.05);
+        opacity: 1;
+    }   
+    60%{
+        transform: scale(1.09);
+        opacity: 0.6;
+    }   
+    80%{
+        transform: scale(1.1);
+        opacity: 0.3;
+    }   
+    90%{
+        transform: scale(1.2);
+        opacity: 0.2;
+    }   
+    100%{
+        transform: scale(1.3);
+        opacity: 0;
+    }   
+}
