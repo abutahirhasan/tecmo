@@ -1,4 +1,40 @@
 //Global Social
+.form-style1{
+	background: $bg-color-4;
+	border-radius: 10px;
+	padding-right: 19px;
+	input{
+		width: 100%;
+		padding: 13px 19px;
+		background: transparent;
+		border: unset;
+		color: $white;
+		font-weight: 400;
+		font-size: 14px;
+		&::placeholder{
+			color: $white65;
+		}
+	}
+	button{
+		i{
+			color: $white;
+		}
+	}
+}
+//Global Social
+
+//Checkbox Custom
+.cmn-checkbox{
+	.form-check-input{
+		width: 18px;
+		height: 18px;
+		border: 1px solid rgba(255, 255, 255, 0.45);
+		background-color: transparent;
+	}
+}
+//Checkbox Custom
+
+//Global Social
 .social-wrapper {
 	a {
 		width: 40px;

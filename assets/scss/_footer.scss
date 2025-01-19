@@ -1,3 +1,24 @@
+//Footer Style One
+.footer-section {
+	position: relative;
+	background: url(../img/footer/footer-bg.png) no-repeat center center;
+	background-size: cover;
+	.footer-bottom {
+		position: relative;
+		z-index: 9;
+		.footer-wrapper {
+			position: relative;
+			z-index: 9;
+			border-top: 1px dashed rgba(255, 255, 255, 0.20);
+			padding: 20px 0;
+		}
+	}
+	.top-rated-pragraph{
+		max-width: 330px;
+	}
+}
+//Footer Style One
+
 .footer-widgets-wrapper {
 	padding: 80px 0 80px;
 	position: relative;
@@ -183,58 +204,6 @@
 		}
 	}
 }
-.footer-bottom {
-	position: relative;
-	z-index: 9;
-	.footer-wrapper {
-		position: relative;
-		z-index: 9;
-		border-top: 1px solid var(--pra);
-		padding: 20px 0;
-
-		.footer-menu {
-			@include flex;
-			gap: 30px;
-			.line {
-				width: 1px;
-				height: 24px;
-				background: var(--cmnwhite);
-			}
-			li {
-				a {
-					background-position: 0 95%;
-					background-repeat: no-repeat;
-					background-size: 0% 2px;
-					display: inline-block;
-					@include transition;
-					&:hover {
-						background-size: 100% 1px;
-						color: $p2-clr;
-					}
-				}
-			}
-		}
-		@include breakpoint(max-xl) {
-			.footer-menu {
-				@include flex;
-				gap: 14px;
-				.line {
-					height: 18px;
-				}
-			}
-		}
-		@include breakpoint(max-sm) {
-			.footer-menu {
-				flex-wrap: wrap;
-				gap: 0px 14px;
-				justify-content: center;
-			}
-		}
-	}
-}
-.footer-section {
-	position: relative;
-}
 //footer Version2
 .element-footer {
 	position: absolute;
@@ -243,46 +212,46 @@
 	height: 100%;
 }
 //Footer version2
-.footer-section2{
-	.footer-menu-wrap{
+.footer-section2 {
+	.footer-menu-wrap {
 		border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 		padding-bottom: 38px;
-		.footer-menu{
-			li{
-				a{
-					&:hover{
+		.footer-menu {
+			li {
+				a {
+					&:hover {
 						color: $p1-clr;
 					}
 				}
 			}
 		}
-		@include breakpoint(max-md){
-			.footer-menu-logo{
+		@include breakpoint(max-md) {
+			.footer-menu-logo {
 				margin: 0 auto;
 				text-align: center;
 			}
 		}
 	}
-	.mail-form{
+	.mail-form {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		border-radius: 100px;
 		overflow: hidden;
 		max-width: 360px;
-		input{
+		input {
 			width: 100%;
 			height: 50px;
 			border: unset;
-			background: #151B2A;
+			background: #151b2a;
 			padding: 1px 18px;
 			color: $white;
 			font-size: 14px;
-			&::placeholder{
+			&::placeholder {
 				color: $white;
 			}
 		}
-		button{
+		button {
 			height: 50px;
 			width: 60px;
 		}
@@ -294,7 +263,7 @@
 	border: 1px solid $p2-clr;
 	padding: 60px 20px;
 	border-radius: 20px;
-	.newsletter-inner{
+	.newsletter-inner {
 		max-width: 640px;
 		margin: 0 auto;
 	}
@@ -326,19 +295,19 @@
 			padding: 13px 24px;
 			color: $black;
 			transition: all 0.4s;
-			&:hover{
+			&:hover {
 				background: $p1-clr;
 			}
 		}
-		@include breakpoint(max-sm){
+		@include breakpoint(max-sm) {
 			flex-wrap: wrap;
 			justify-content: center;
 		}
 	}
-	@include breakpoint(max-xxl){
+	@include breakpoint(max-xxl) {
 		padding: 40px 20px;
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 30px 20px;
 	}
 }

@@ -7,14 +7,16 @@ Last change:    18/01/2025
 Assigned to:    Tecmo - IT Solution and Technology HTML Template
 Primary use:    Visa 
 -------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 :root {
   --body: #fff;
-  --black: #090F1F;
+  --black: #031740;
   --white: #fff;
-  --p1-clr: #83CD8F;
+  --white65: rgb(245, 245, 250, 65%);
+  --white75: rgb(255, 255, 255, 75%);
+  --p1-clr: #5135FF;
   --p2-clr: #FED500;
-  --p3-clr: #B29AFF;
+  --p3-clr: #FF5455;
   --blogbox: #EFEFEF;
   --cmnbg: #EBF3F6;
   --n100-clr: #EEF6E7;
@@ -24,8 +26,8 @@ Primary use:    Visa
   --n700-clr: rgba(36, 36, 38, 1);
   --n800-clr: rgba(49, 49, 49, 1);
   --n900-clr: #090F1F;
-  --theme: rgba(32, 109, 255, 1);
-  --pra: #2C3347;
+  --theme: #5135FF;
+  --pra: #49577A;
   --pra2: #DDD;
   --text: #313131;
   --cmnwhite: #CBCBCC;
@@ -35,9 +37,10 @@ Primary use:    Visa
   --border: #E3E3E3;
   --border2: #242449;
   --border3: #5262FF;
-  --bg: #F4EEE5;
-  --bg2: #EFF5F6;
-  --bg3: #70A6B1;
+  --bg: #F0F4FD;
+  --bg2: #F3F3F3;
+  --bg3: #031740;
+  --bg4: #0B2150;
   --box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
 }
 
@@ -148,11 +151,11 @@ Primary use:    Visa
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 .heading-font {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .sub-font {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .body-font {
@@ -202,7 +205,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--header);
@@ -435,6 +438,14 @@ footer {
   color: var(--white);
 }
 
+.white75 {
+  color: var(--white75);
+}
+
+.white65 {
+  color: var(--white65);
+}
+
 .theme {
   color: var(--theme);
 }
@@ -584,6 +595,34 @@ footer {
   .custom-counter-wrapper .line {
     display: none;
   }
+}
+
+.form-style1 {
+  background: var(--bg4);
+  border-radius: 10px;
+  padding-right: 19px;
+}
+.form-style1 input {
+  width: 100%;
+  padding: 13px 19px;
+  background: transparent;
+  border: unset;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 14px;
+}
+.form-style1 input::placeholder {
+  color: var(--white65);
+}
+.form-style1 button i {
+  color: var(--white);
+}
+
+.cmn-checkbox .form-check-input {
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background-color: transparent;
 }
 
 .social-wrapper a {
@@ -1664,6 +1703,25 @@ footer {
     transform: translateX(-10px);
   }
 }
+.footer-section {
+  position: relative;
+  background: url(../img/footer/footer-bg.png) no-repeat center center;
+  background-size: cover;
+}
+.footer-section .footer-bottom {
+  position: relative;
+  z-index: 9;
+}
+.footer-section .footer-bottom .footer-wrapper {
+  position: relative;
+  z-index: 9;
+  border-top: 1px dashed rgba(255, 255, 255, 0.2);
+  padding: 20px 0;
+}
+.footer-section .top-rated-pragraph {
+  max-width: 330px;
+}
+
 .footer-widgets-wrapper {
   padding: 80px 0 80px;
   position: relative;
@@ -1677,7 +1735,7 @@ footer {
   color: var(--white);
   font-size: 25px;
   display: inline-block;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .footer-widgets-wrapper .single-footer-widget .footer-content p {
   margin-bottom: 30px;
@@ -1826,59 +1884,6 @@ footer {
   background: var(--p2-clr);
 }
 
-.footer-bottom {
-  position: relative;
-  z-index: 9;
-}
-.footer-bottom .footer-wrapper {
-  position: relative;
-  z-index: 9;
-  border-top: 1px solid var(--pra);
-  padding: 20px 0;
-}
-.footer-bottom .footer-wrapper .footer-menu {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.footer-bottom .footer-wrapper .footer-menu .line {
-  width: 1px;
-  height: 24px;
-  background: var(--cmnwhite);
-}
-.footer-bottom .footer-wrapper .footer-menu li a {
-  background-position: 0 95%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  display: inline-block;
-  transition: all 0.4s ease-in-out;
-}
-.footer-bottom .footer-wrapper .footer-menu li a:hover {
-  background-size: 100% 1px;
-  color: var(--p2-clr);
-}
-@media (max-width: 1199px) {
-  .footer-bottom .footer-wrapper .footer-menu {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-  }
-  .footer-bottom .footer-wrapper .footer-menu .line {
-    height: 18px;
-  }
-}
-@media (max-width: 575px) {
-  .footer-bottom .footer-wrapper .footer-menu {
-    flex-wrap: wrap;
-    gap: 0px 14px;
-    justify-content: center;
-  }
-}
-
-.footer-section {
-  position: relative;
-}
-
 .element-footer {
   position: absolute;
   left: 0;
@@ -1911,7 +1916,7 @@ footer {
   width: 100%;
   height: 50px;
   border: unset;
-  background: #151B2A;
+  background: #151b2a;
   padding: 1px 18px;
   color: var(--white);
   font-size: 14px;
@@ -2076,7 +2081,7 @@ footer {
   color: var(--black);
   padding: 16px 0;
   text-align: left;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   position: relative;
   text-transform: capitalize;
   transition: all 0.4s ease-in-out;
@@ -4593,7 +4598,7 @@ footer {
   }
 }
 .preloader .animation-preloader .txt-loading {
-  font: bold 5em "Space Grotesk", sans-serif, "Inter", sans-serif;
+  font: bold 5em "Plus Jakarta Sans", sans-serif, "Inter", sans-serif;
   text-align: center;
   user-select: none;
 }
@@ -4633,7 +4638,7 @@ footer {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);

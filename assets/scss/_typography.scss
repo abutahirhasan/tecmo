@@ -2,10 +2,10 @@
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-$heading-font: "Space Grotesk", sans-serif;
-$sub-font: "Space Grotesk", sans-serif;
+$heading-font: "Plus Jakarta Sans", sans-serif;
+$sub-font: "Plus Jakarta Sans", sans-serif;
 $body-font: "Inter", sans-serif;
 
 .heading-font {
@@ -260,6 +260,12 @@ footer {
 }
 .white {
 	color: $white;
+}
+.white75{
+	color: $white75;
+}
+.white65{
+	color: $white65;
 }
 .theme {
 	color: $theme;
