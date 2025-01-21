@@ -9,18 +9,18 @@
 		.footer-wrapper {
 			position: relative;
 			z-index: 9;
-			border-top: 1px dashed rgba(255, 255, 255, 0.20);
+			border-top: 1px dashed rgba(255, 255, 255, 0.2);
 			padding: 20px 0;
 		}
 	}
-	.top-rated-pragraph{
+	.top-rated-pragraph {
 		max-width: 330px;
 	}
 }
 //Footer Style One
 
 .footer-widgets-wrapper {
-	padding: 80px 0 80px;
+	padding: 100px 0 100px;
 	position: relative;
 	z-index: 9;
 	.single-footer-widget {
@@ -85,13 +85,14 @@
 					margin-bottom: 14px;
 				}
 				a {
-					color: $pra2;
+					color: $white65;
 					font-family: $body-font;
 					display: flex;
 					align-items: center;
 					position: relative;
 					transition: all 0.4s;
 					text-wrap: nowrap;
+					padding-left: 20px;
 					i {
 						font-size: 14px;
 						transition: all 0.4s;
@@ -99,8 +100,20 @@
 						left: 0;
 						opacity: 0;
 					}
+					&::before {
+						position: absolute;
+						left: 0;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						content: "";
+						background: $white65;
+					}
 					&:hover {
-						color: $p1-clr;
+						&::before {
+							background: $p3-clr;
+						}
+						color: $p3-clr;
 						i {
 							opacity: 1;
 						}
@@ -130,6 +143,15 @@
 				}
 			}
 		}
+		.social-custom{
+			a{
+				&:hover{
+					i{
+						color: $p3-clr !important;
+					}
+				}
+			}
+		}
 	}
 	.widgets-line {
 		width: 1px;
@@ -141,7 +163,7 @@
 		gap: 30px 20px;
 		.single-footer-widget {
 			.widget-head {
-				margin-bottom: 20px;
+				margin-bottom: 15px;
 			}
 			.footer-content {
 				p {
@@ -157,7 +179,7 @@
 			.list-area {
 				li {
 					&:not(:last-child) {
-						margin-bottom: 14px;
+						margin-bottom: 10px;
 					}
 					a {
 						font-size: 16px;
@@ -167,11 +189,11 @@
 			.footer-info {
 				li {
 					&:not(:last-child) {
-						margin-bottom: 14px;
+						margin-bottom: 6px;
 					}
 					font-size: 14px;
 					a {
-						font-size: 16px;
+						font-size: 14px;
 					}
 				}
 			}
@@ -180,83 +202,54 @@
 	@include breakpoint(max-md) {
 		padding: 65px 0 65px;
 	}
-	@media screen and (max-width: 540px) {
-		padding-left: 10px;
+}
+
+//Customer Touch
+.customer-touch {
+	position: relative;
+	z-index: 1;
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 170px;
+		content: "";
+		background: #031740;
+		z-index: -1;
 	}
 }
-.foot-address {
-	.icon {
-		border: 1px solid $p2-clr;
-		width: 40px;
-		height: 40px;
-		min-width: 40px;
-		transition: all 0.4s;
+.customer-touch-wrap {
+	background: url(../img/footer/footer-subscribebg.png) no-repeat center center;
+	background-size: cover;
+	border-radius: 24px;
+	padding: 100px 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 24px;
+	.section-title {
+		max-width: 610px;
 	}
-	.cont {
-		span {
-			color: $white;
-			opacity: 0.8;
-		}
-	}
-	&:hover {
-		.icon {
-			background: $p2-clr;
-		}
-	}
-}
-//footer Version2
-.element-footer {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-}
-//Footer version2
-.footer-section2 {
-	.footer-menu-wrap {
-		border-bottom: 1px solid rgb(255, 255, 255, 0.2);
-		padding-bottom: 38px;
-		.footer-menu {
-			li {
-				a {
-					&:hover {
-						color: $p1-clr;
-					}
-				}
-			}
-		}
-		@include breakpoint(max-md) {
-			.footer-menu-logo {
-				margin: 0 auto;
-				text-align: center;
-			}
+	@include breakpoint(max-lg) {
+		justify-content: center;
+		padding: 60px 30px;
+		.section-title {
+			margin: 0 auto;
+			text-align: center;
 		}
 	}
-	.mail-form {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		border-radius: 100px;
-		overflow: hidden;
-		max-width: 360px;
-		input {
-			width: 100%;
-			height: 50px;
-			border: unset;
-			background: #151b2a;
-			padding: 1px 18px;
-			color: $white;
-			font-size: 14px;
-			&::placeholder {
-				color: $white;
-			}
-		}
-		button {
-			height: 50px;
-			width: 60px;
+	@include breakpoint(max-sm) {
+		justify-content: center;
+		padding: 60px 20px;
+		.section-title {
+			margin: 0 auto;
+			text-align: center;
 		}
 	}
 }
+//Customer Touch
 
 //Newsletter
 .newsletter-wrap {

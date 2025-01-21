@@ -9,6 +9,13 @@
 		font-weight: 500;
 	}
 }
+.sub-badge{
+	letter-spacing: 3.2px;
+	@include breakpoint(max-lg){
+		font-size: 13px;
+		letter-spacing: 1.2px;
+	}
+}
 
 .section-title-area {
 	display: flex;
@@ -95,3 +102,52 @@
 	}
 }
 //>>>>> Basic Css End <<<<<//
+
+
+
+//Challenge Style
+.challenge-section{
+	z-index: 1;
+	.challenge-ele1{
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: -1;
+	}
+	.challenge-ele2{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: -1;
+	}
+}
+.challenge-wrapper{
+	gap: 24px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	@include breakpoint(max-xxl){
+		gap: 14px;
+	}
+	@include breakpoint(max-xl){
+		gap: 14px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	@include breakpoint(max-xs){
+		gap: 14px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+.challenge-item{
+	&:hover{
+		background: $p1-clr;
+		img{
+			filter: brightness(25) invert(0);
+		}
+		span{
+			color: $white;
+		}
+	}
+}
+//Challenge Style

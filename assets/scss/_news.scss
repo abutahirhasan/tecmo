@@ -1,89 +1,73 @@
 //Blog Nesw
 .news-section {
 	z-index: 1;
-	.shape-blog-right {
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: -1;
-	}
 }
 .news-single-items {
 	position: relative;
+	transition: all 0.4s;
 	.news-image {
 		width: 100%;
 		img {
 			width: 100%;
 		}
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: 0%;
+			height: 100%;
+			background: rgba(3, 23, 64, 0.55);
+			transition: all 0.4s;
+		}
+		&:hover {
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+	.author-img {
+		width: 34px;
+		height: 34px;
+		object-fit: contain;
 	}
 	.news-content {
 		transition: all 0.5s;
-		padding: 26px 30px 30px;
-		.cmn-tag {
-			padding: 5px 20px 5px;
-			font-size: 16px;
-			line-height: 30px;
-			margin-bottom: 20px;
-		}
-	}
-	@include breakpoint(max-xxl) {
-		.news-content {
-			padding: 20px 20px 22px;
-		}
-	}
-	@include breakpoint(max-md) {
-		.news-content {
-			padding: 20px 16px 22px;
-		}
-	}
-	&.style1 {
-		transform: translateY(-5px);
-		&:hover {
-			.news-content {
-				border-bottom: 5px solid $p1-clr !important;
-				h3 {
-					a {
-						color: $p1-clr;
-					}
-				}
-			}
-		}
-	}
-	//style2
-	&.style2 {
-		border-radius: 20px;
-		border: 1px solid #ddd;
-		background: $white;
-		box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
-		transition: all 0.5s;
-		.news-content {
-			padding: 28px;
-			h4 {
-				margin-bottom: 30px;
-			}
-		}
-		&:hover {
-			transform: translateY(-8px);
-			.news-content {
-				h4 {
-					a {
-						color: $black;
-					}
-				}
-			}
-		}
+		padding: 26px 21px 26px;
 	}
 	&:hover {
+		box-shadow: 0px 8px 40px -10px rgba(45, 46, 83, 0.2);
+		.news-image {
+			&::before {
+				width: 100%;
+			}
+		}
+		.blog-badge1 {
+			background: $p3-clr !important;
+			color: $white;
+		}
 		.news-content {
 			h4 {
 				a {
-					color: $p1-clr;
+					color: $p3-clr;
 				}
 			}
+		}
+	}
+	@include breakpoint(max-xxl){
+		.news-content{
+			padding: 19px 15px 19px;
+		}
+	}
+	@include breakpoint(max-md){
+		.news-content{
+			padding: 19px 11px 19px;
 		}
 	}
 }
 //Blog Nesw
+
+//---------------- not use this bottom code
 
 //Blog Details
 .blog-details-left {
@@ -584,26 +568,26 @@
 		}
 	}
 }
-.previous-nextime{
+.previous-nextime {
 	background: $n100-clr;
 	border-radius: 20px;
 	padding: 20px 40px;
 	margin-top: 36px;
-	.prev-icon{
+	.prev-icon {
 		width: 50px;
 		height: 50px;
 		background: $white;
-		&:hover{
+		&:hover {
 			background: $p1-clr;
-			i{
+			i {
 				color: $black;
 			}
 		}
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 12px 16px;
 		margin-top: 29px;
-		.prev-icon{
+		.prev-icon {
 			width: 40px;
 			height: 40px;
 		}
