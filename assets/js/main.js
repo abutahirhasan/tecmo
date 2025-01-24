@@ -53,13 +53,19 @@ CSS TABLE OF CONTENTS
 		});
 
 		//>> Sticky Header Js Start <<//
-
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 250) {
 				$("#header-sticky").addClass("sticky");
 			} else {
 				$("#header-sticky").removeClass("sticky");
 			}
+		});
+
+		//--Pricing Switcher
+		const switchElement = document.querySelector(".switch");
+
+		switchElement.addEventListener("click", () => {
+			switchElement.classList.toggle("active");
 		});
 
 		//>> Hero-3 Slider Start <<//
