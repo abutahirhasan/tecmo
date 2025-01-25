@@ -2,72 +2,26 @@
 .header-top-section {
 	position: relative;
 	z-index: 9;
-	background-color: #ebf3f6;
-	.header-top-wrapper {
-		@include flex;
-		justify-content: space-between;
-		padding: 12px 0;
-		.contact-list {
-			@include flex;
-			gap: 40px;
-
-			li {
-				color: $black;
+	.right-top-cont{
+		.line{
+			width: 1px;
+			height: 20px;
+			background: #FFFFFF;
+			opacity: 20%;
+		}
+		.nice-select{
+			padding-right: 16px;
+			.current{
+				color: #fff;
 				font-weight: 400;
-
-				i {
-					margin-right: 5px;
-				}
-
-				a {
-					color: $black;
-					font-weight: 400;
-				}
+				font-size: 14px;
 			}
-		}
-
-		.social-wrapper {
-			gap: 14px;
-			a {
-				i {
-					font-size: 20px;
-					transition: all 0.4s;
-				}
-				.ani-arrow {
-					transition: all 0.5s;
-				}
-				&:hover {
-					i {
-						color: $p1-clr;
-					}
-				}
+			&::after{
+				border-bottom: 2px solid #fff;
+				border-right: 2px solid #fff;
 			}
-		}
-
-		&.style-2 {
-			padding: 15px 0;
-
-			.contact-list {
-				li {
-					color: $white;
-					a {
-						color: $white;
-					}
-				}
-			}
-
-			.social-icon {
-				span {
-					color: $white;
-				}
-
-				a {
-					color: $white;
-
-					&:hover {
-						color: $p2-clr;
-					}
-				}
+			.list{
+				width: 130px;
 			}
 		}
 	}
@@ -343,8 +297,8 @@
 		}
 	}
 }
-.header-hamburger-inner{
-	.line{
+.header-hamburger-inner {
+	.line {
 		width: 1px;
 		height: 40px;
 		background: $black;
@@ -458,21 +412,21 @@
 	}
 	&.header-style2 {
 		padding-top: 0;
-		.container{
+		.container {
 			max-width: 1350px;
 			margin: 0 auto;
 		}
 		.mega-menu-wrapper {
 			border-radius: 0;
-			.desktop-search{
+			.desktop-search {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
 				border: 1px solid $border-color;
 				width: 260px;
-				padding-right:1px;
+				padding-right: 1px;
 				border-radius: 100px;
-				input{
+				input {
 					width: 100%;
 					padding: 6px 10px 6px 22px;
 					color: $pra;
@@ -481,20 +435,20 @@
 					border: unset;
 					background: transparent;
 				}
-				::placeholder{
+				::placeholder {
 					color: $pra;
 				}
-				i{
+				i {
 					margin-right: 24px;
 					color: $p3-clr;
 				}
-				@include breakpoint(max-xl){
+				@include breakpoint(max-xl) {
 					display: none;
 				}
 			}
-			.header-main{
+			.header-main {
 				padding: 18px 0;
-				@include breakpoint(max-xl){
+				@include breakpoint(max-xl) {
 					padding: 20px 0;
 				}
 			}
@@ -541,7 +495,7 @@
 	.mega-menu-wrapper {
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	}
-	&.header-inner{
+	&.header-inner {
 		background: transparent;
 	}
 }
@@ -647,7 +601,8 @@
 					border-radius: 100px;
 					overflow: hidden;
 					padding: 9px 16px 10px;
-					span,i{
+					span,
+					i {
 						color: $white !important;
 					}
 				}

@@ -249,7 +249,7 @@ br {
 	&::after {
 		height: 8px;
 		width: 8px;
-		right: -25px;
+		right: 0;
 		top: 15px;
 		border-color: $header-color;
 		border-bottom: 2px solid $header-color;
@@ -258,7 +258,7 @@ br {
 
 	.list {
 		width: initial;
-		background-color: $p2-clr;
+		background-color: #fff;
 		box-shadow: none;
 		overflow: initial;
 		box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
@@ -267,7 +267,7 @@ br {
 		padding: 0;
 		max-height: 50vh;
 		overflow-x: auto;
-		right: -50px;
+		left: 0;
 		&::-webkit-scrollbar {
 			width: 2px;
 			opacity: 1;
