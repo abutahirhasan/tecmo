@@ -1,45 +1,44 @@
 //global access
 .access-item {
 	background: $white;
-	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
-	padding: 40px 40px;
-	transition: all 0.4s;
-	.icon {
-		width: 80px;
-		height: 80px;
-		border-radius: 50%;
-		transition: all 0.4s;
-	}
-	.storke {
-		color: $pra;
-		-webkit-text-fill-color: white;
-		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: $pra;
-		font-family: "Space Grotesk";
-		font-size: 40px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 45px;
-		transition: all 0.4s;
-		transition: all 0.4s;
-	}
+	padding: 45px 16px;
+	gap: 48px;
+	transition: all 0.5s;
 	@include breakpoint(max-xxl){
-		padding: 30px 24px;
-	}
-	@include breakpoint(max-xl){
-		.icon{
-			width: 65px;
-			height: 65px;
-		}
+		padding: 35px 15px;
 	}
 	&:hover{
-		.icon{
-			background: $p1-clr;
+		h4,span{
+			color: $white;
 		}
-		.storke{
-			-webkit-text-stroke-color: $p1-clr;
-			-webkit-text-fill-color: $p1-clr;
+		background: $p1-clr;
+		.icon-img{
+			img{
+				filter: brightness(25);
+			}
 		}
+	}
+	@media screen and (max-width: 991px) {
+		gap: 35px;
 	}
 }
 //global access
+
+
+//Consulting Section
+.consulting-section{
+	background: linear-gradient(90deg, #5135FF 0%, #FF5455 100%);
+}
+.customer-review{
+	.plus{
+		width: 60px;
+		height: 60px;
+		min-width: 60px;
+	}
+	.review-img{
+		&:not(:first-child){
+			margin-left: -19px;
+		}
+	}
+}
+//Consulting Section

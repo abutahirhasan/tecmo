@@ -1,25 +1,7 @@
 
 
 //Ranking
-.unseen-item{
-	border: 1px solid $black;
-	padding: 40px 40px;
-	transition: all 0.5s;
-	.icon{
-		width: 60px;
-		height: 60px;
-		min-width: 60px;
-	}
-	&:hover{
-		transform: translateY(8px);
-		border-color: $p1-clr;
-		h3{
-			a{
-				color: $p1-clr;
-			}
-		}
-	}
-}
+
 @keyframes leftr {
 	50% {
 		transform: translateX(-10px);

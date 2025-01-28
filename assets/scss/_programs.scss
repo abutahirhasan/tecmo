@@ -24,27 +24,7 @@
 		opacity: 0;
 	}
 }
-//picture Discover
-.picture-dicover-content {
-	background: $n100-clr;
-	padding: 30px;
-	.icon {
-		background: $white;
-		width: 70px;
-		height: 70px;
-		min-width: 70px;
-	}
-}
-.best-badge {
-	background: $n300-clr;
-	padding: 36px 38px;
-	@include breakpoint(max-xxl){
-		padding: 28px 22px;
-		img{
-			width: 60px;
-		}
-	}
-}
+
 
 //ticket-booking-widget
 .ticket-booking-content{

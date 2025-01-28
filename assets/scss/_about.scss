@@ -1,19 +1,15 @@
 //about one
 .about-section {
-	.about-wrapper {
-		background: $n100-clr;
-		border-radius: 30px;
-		max-width: 1730px;
-		margin: 0 auto;
-	}
 	.about-thumb {
 		background: rgb(255, 255, 255, 0.5);
 		border-radius: 30px;
-		padding: 40px 30px;
+		z-index: 1;
 		.about-ele {
 			position: absolute;
-			right: 110px;
-			top: 130px;
+			right: 100px;
+			top: 70px;
+			z-index: -1;
+			animation: updown 2s linear infinite;
 		}
 		@include breakpoint(max-md) {
 			padding: 16px 16px;
@@ -23,47 +19,45 @@
 			}
 		}
 	}
-	&.about-style2 {
-		.about-wrapper {
-			background: $n900-bg;
-			.about-information2 {
-				.about-info-box {
-					p {
-						color: rgb(255, 255, 255, 0.8);
-					}
-				}
-				.line {
-					width: 100%;
-					height: 1px;
-					background: #151b2a;
-				}
-			}
-		}
-	}
 }
 .about-content {
 	.about-information {
-		background: $white;
-		padding: 30px 40px;
-		border-radius: 30px;
-		margin-bottom: 40px;
+		margin-bottom: 34px;
 		.about-info {
 			.icon {
-				width: 60px;
-				min-width: 60px;
-				height: 60px;
+				width: 54px;
+				min-width: 54px;
+				height: 54px;
 				border-radius: 50%;
+				box-shadow: 0px 10px 30px 0px rgba(13, 18, 30, 0.12);
 			}
 		}
-		.line {
-			width: 100%;
-			height: 1px;
-			background: $border-color;
+	}
+	.about-list{
+		margin-bottom: 40px;
+		.icon{
+			background: #F0F4FD;
+			width: 21px;
+			height: 21px;
+			min-width: 21px;
+			border-radius: 50%;
+			box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 		}
-		@include breakpoint(max-lg) {
-			padding: 24px 24px;
-			margin-bottom: 26px;
+	}
+	@media screen and (max-width: 1399px) {
+		.about-information{
+			margin-bottom: 24px;
 		}
+		.about-list{
+			margin-bottom: 24px;
+		}
+	}
+}
+.about-call{
+	.icon{
+		width: 54px;
+		height: 54px;
+		min-width: 54px;
 	}
 }
 
