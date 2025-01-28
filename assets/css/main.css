@@ -4850,24 +4850,28 @@ input.main-search-input::placeholder {
   font-size: 16px;
 }
 .gateway-section .array-button button:hover {
-  background: var(--p2-clr);
+  background: var(--p1-clr);
+}
+.gateway-section .array-button button:hover i {
+  color: var(--white);
 }
 
 .gateway-items {
   position: relative;
 }
 .gateway-items .content {
-  padding: 20px 28px 28px;
+  width: 290px;
+  height: 290px;
+  padding: 24px;
   position: absolute;
   bottom: 18px;
   right: 18px;
-  max-width: 303px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
 }
-@media (max-width: 767px) {
-  .gateway-items .content {
-    padding: 14px 16px 18px;
-    max-width: 250px;
-  }
+.gateway-items .content .box-inner {
+  width: 240px;
+  height: 240px;
 }
 
 .student-service-item .thumb img {
