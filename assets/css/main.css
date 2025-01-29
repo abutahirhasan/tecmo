@@ -643,6 +643,26 @@ footer {
 .form-style1 button i {
   color: var(--white);
 }
+.form-style1.form-style2 {
+  padding-right: 10px;
+}
+.form-style1.form-style2 .envelop {
+  padding-left: 22px;
+  color: var(--white65);
+}
+.form-style1.form-style2 .arrow {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: var(--p1-clr);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-style1.form-style2 .arrow i {
+  color: var(--white);
+}
 
 .cmn-checkbox .form-check-input {
   width: 18px;
@@ -832,6 +852,25 @@ footer {
     line-height: 150%;
   }
 }
+.social-icon a {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0px 1px 2px 0px rgba(1, 15, 28, 0.16);
+  transition: all 0.4s;
+}
+.social-icon a i {
+  color: var(--white);
+}
+.social-icon a:hover {
+  background: var(--p3-clr);
+}
+
 @-webkit-keyframes rippleOne {
   70% {
     -webkit-box-shadow: 0 0 0 40px rgba(244, 68, 56, 0);
@@ -1645,6 +1684,9 @@ footer {
 }
 .footer-section .top-rated-pragraph {
   max-width: 330px;
+}
+.footer-section.style2 .footer-bottom .footer-wrapper {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer-widgets-wrapper {

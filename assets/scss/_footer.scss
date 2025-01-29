@@ -16,6 +16,13 @@
 	.top-rated-pragraph {
 		max-width: 330px;
 	}
+	&.style2{
+		.footer-bottom{
+			.footer-wrapper{
+				border-top: 1px solid rgba(255, 255, 255, 0.15);
+			}
+		}
+	}
 }
 //Footer Style One
 

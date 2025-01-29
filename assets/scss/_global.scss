@@ -1,9 +1,9 @@
 //Global Social
-.form-style1{
+.form-style1 {
 	background: $bg-color-4;
 	border-radius: 10px;
 	padding-right: 19px;
-	input{
+	input {
 		width: 100%;
 		padding: 13px 19px;
 		background: transparent;
@@ -11,21 +11,41 @@
 		color: $white;
 		font-weight: 400;
 		font-size: 14px;
-		&::placeholder{
+		&::placeholder {
 			color: $white65;
 		}
 	}
-	button{
-		i{
+	button {
+		i {
 			color: $white;
+		}
+	}
+	&.form-style2{
+		padding-right: 10px;
+		.envelop{
+			padding-left: 22px;
+			color: $white65;
+		}
+		.arrow{
+			width: 40px;
+			height: 40px;
+			min-width: 40px;
+			background: $p1-clr;
+			border-radius: 6px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			i{
+				color: $white;
+			}
 		}
 	}
 }
 //Global Social
 
 //Checkbox Custom
-.cmn-checkbox{
-	.form-check-input{
+.cmn-checkbox {
+	.form-check-input {
 		width: 18px;
 		height: 18px;
 		border: 1px solid rgba(255, 255, 255, 0.45);
@@ -213,3 +233,26 @@
 		line-height: 150%;
 	}
 }
+
+//Social Icon area
+.social-icon {
+	a {
+		width: 40px;
+		height: 40px;
+		min-width: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 4px;
+		background: rgba(255, 255, 255, 0.06);
+		box-shadow: 0px 1px 2px 0px rgba(1, 15, 28, 0.16);
+		transition: all 0.4s;
+		i{
+			color: $white;
+		}
+		&:hover{
+			background: $p3-clr;
+		}
+	}
+}
+//Social Icon area
