@@ -1,3 +1,79 @@
+.team-items {
+	background: $white;
+	border-radius: 10px;
+	overflow: hidden;
+	.thumb{
+		border-radius: 10px;
+		overflow: hidden;
+		img{
+			border-radius: 10px;
+			overflow: hidden;
+			transition: all 0.4s;
+		}
+	}
+	&:hover{
+		.thumb{
+			img{
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+.plus-icon {
+	position: absolute;
+	top: 35px;
+	left: 35px;
+	width: 60px;
+	.social-wrapper {
+		a {
+			svg {
+				path {
+					stroke: $black !important;
+				}
+			}
+			i {
+				color: $white;
+			}
+			&:hover {
+				background: $p3-clr;
+				i {
+					color: $white;
+				}
+				svg {
+					path {
+						stroke: $white !important;
+					}
+				}
+			}
+		}
+	}
+	.icons {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		i {
+			font-size: 18px;
+		}
+	}
+	.social-wrapper {
+		position: absolute;
+		top: 110%;
+		left: 38%;
+		transform: translateX(-50%) rotateX(90deg);
+		transition: all 0.4s;
+		a {
+			i {
+				color: $black;
+			}
+		}
+	}
+	&:hover {
+		// cursor: pointer;
+		.social-wrapper {
+			transform: translateX(-50%);
+		}
+	}
+}
 
 //Story Section
 .story-section {
@@ -32,26 +108,26 @@
 //Story Section
 
 //Story Details Section
-.story-section-details{
-	.testimonial-items2{
+.story-section-details {
+	.testimonial-items2 {
 		padding: 50px 60px 60px;
 		margin: 0;
-		.quote2{
+		.quote2 {
 			margin-top: 0;
 		}
-		h3{
+		h3 {
 			font-size: 42px;
 		}
-		@include breakpoint(max-lg){
+		@include breakpoint(max-lg) {
 			flex-wrap: wrap;
 			gap: 24px;
 			padding: 24px 20px 30px;
-			h3{
+			h3 {
 				font-size: 24px;
 			}
-			.thumb{
+			.thumb {
 				width: 100%;
-				img{
+				img {
 					width: 100%;
 				}
 			}

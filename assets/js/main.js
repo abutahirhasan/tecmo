@@ -59,11 +59,63 @@ CSS TABLE OF CONTENTS
 			} else {
 				$("#header-sticky").removeClass("sticky");
 			}
+			
+		});
+
+		function isInViewport(element) {
+			var rect = element.getBoundingClientRect();
+			return (
+				rect.top >= 0 &&
+				rect.left >= 0 &&
+				rect.bottom <=
+					(window.innerHeight || document.documentElement.clientHeight) &&
+				rect.right <=
+					(window.innerWidth || document.documentElement.clientWidth)
+			);
+		}
+
+		function progress_bar() {
+			var speed = 30;
+			var items = $(".progress_bar .progress_bar_item");
+
+			items.each(function () {
+				var item = $(this).find(".progress");
+				var itemValue = item.data("progress");
+				var i = 0;
+				var value = $(this);
+				var started = $(this).data("started");
+
+				if (!started && isInViewport(this)) {
+					// Check if in viewport and not started before
+					$(this).data("started", true);
+
+					var count = setInterval(function () {
+						if (i <= itemValue) {
+							var iStr = i.toString();
+							item.css({
+								width: iStr + "%",
+							});
+							value.find(".item_value").html(iStr + "%");
+						} else {
+							clearInterval(count);
+						}
+						i++;
+					}, speed);
+				}
+			});
+		}
+
+		// Run on scroll and on page load
+		$(window).on("scroll", function () {
+			progress_bar();
+		});
+
+		$(document).ready(function () {
+			progress_bar();
 		});
 
 		//faq item
 		const accordionItems = document.querySelectorAll(".accordion-item");
-
 		accordionItems.forEach((item) => {
 			item.addEventListener("click", function () {
 				// Remove 'active' class from all other accordion items
@@ -80,7 +132,6 @@ CSS TABLE OF CONTENTS
 
 		//--Pricing Switcher
 		const switchElement = document.querySelector(".switch");
-
 		switchElement.addEventListener("click", () => {
 			switchElement.classList.toggle("active");
 		});

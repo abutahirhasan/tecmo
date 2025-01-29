@@ -219,32 +219,94 @@
 //Watch Full Style
 
 //counter Style
-.custom-counter-section {
-	.counter-area1{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+.counter-area1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid rgb(3, 23, 64, 10%);
+	border-radius: 10px;
+	padding: 50px 58px;
+	gap: 8px 32px;
+	position: relative;
+	background: $white;
 	.counter-items {
-		border-radius: 20px;
-		padding: 22px 20px;
-		border: 1px solid $border-color;
 		.content {
 			span {
-				font-size: 50px;
+				font-size: 60px;
 				font-style: normal;
-				font-weight: 700;
+				font-weight: 800;
 				color: $black;
 				line-height: 55px;
+				font-family: $heading-font;
 			}
 		}
-		@include breakpoint(max-xxl) {
-			padding: 22px 16px;
+		p {
+			max-width: 173px;
+		}
+		&:hover {
 			.content {
 				span {
-					font-size: 34px;
-					line-height: 44px;
+					color: $p1-clr;
 				}
+			}
+		}
+	}
+	&::before {
+		border: 1px solid rgb(3, 23, 64, 10%);
+		position: absolute;
+		bottom: -20px;
+		width: 90%;
+		height: 100%;
+		content: "";
+		border-radius: 10px;
+		z-index: -1;
+	}
+	@include breakpoint(max-xl) {
+		padding: 32px 30px;
+		gap: 8px 24px;
+		.counter-items {
+			.content {
+				span {
+					font-size: 40px;
+					font-weight: 800;
+				}
+			}
+			p {
+				max-width: 173px;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding: 32px 30px;
+		gap: 8px 24px;
+		flex-wrap: wrap;
+		justify-content: center;
+		.counter-items {
+			.content {
+				span {
+					font-size: 40px;
+					font-weight: 800;
+				}
+			}
+			p {
+				max-width: 173px;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		padding: 28px 24px 32px;
+		gap: 8px 24px;
+		flex-wrap: wrap;
+		justify-content: center;
+		.counter-items {
+			.content {
+				span {
+					font-size: 24px;
+					font-weight: 700;
+				}
+			}
+			p {
+				max-width: 173px;
 			}
 		}
 	}

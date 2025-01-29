@@ -33,28 +33,29 @@
 			}
 		}
 	}
-	.about-list{
+	.about-list {
 		margin-bottom: 40px;
-		.icon{
-			background: #F0F4FD;
+		.icon {
+			background: #f0f4fd;
 			width: 21px;
 			height: 21px;
 			min-width: 21px;
 			border-radius: 50%;
-			box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+			box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+				rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 		}
 	}
 	@media screen and (max-width: 1399px) {
-		.about-information{
+		.about-information {
 			margin-bottom: 24px;
 		}
-		.about-list{
+		.about-list {
 			margin-bottom: 24px;
 		}
 	}
 }
-.about-call{
-	.icon{
+.about-call {
+	.icon {
 		width: 54px;
 		height: 54px;
 		min-width: 54px;
@@ -72,62 +73,56 @@
 	}
 }
 
-//Counter Custom
-.custom-counter-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	z-index: 1;
-	padding: 40px 60px;
-	transform: translateY(80px);
-	margin-top: -80px;
-	position: relative;
-	.custom-counter-item {
-		h2,
-		span {
-			font-size: 50px;
-			font-weight: 700;
-			color: $n900-clr;
-		}
+//Company Benifit
+.company-infowrapper {
+	background: $bg-color;
+	border-radius: 10px 0 0 10px;
+	padding: 140px 0 140px 100px;
+	margin-top: 120px;
+	.box {
+		max-width: 590px;
 	}
-	.line {
-		width: 1px;
-		height: 90px;
-		background: $n900-clr;
+	.progress_bar_item .item_bar {
+		background: #d9e0ef;
+		border-radius: 100px;
+		height: 10px;
 	}
-	@include breakpoint(max-lg) {
-		padding: 20px 20px;
-		transform: translateY(0px);
-		margin-top: 0px;
-		position: relative;
-		.custom-counter-item {
-			h2,
-			span {
-				font-size: 34px;
-				font-weight: 700;
-				color: $n900-clr;
+	.progress_bar_item .item_bar .progress {
+		border-radius: 100px;
+		background: linear-gradient(90deg, #5135ff 0%, #ff5455 100%);
+		height: 10px;
+	}
+}
+
+.company-benifit-section {
+	@media screen and (max-width: 1500px) {
+		.company-thumb {
+			width: 100%;
+			margin: 0 10px;
+			img {
+				border-radius: 10px;
+				width: 100%;
 			}
 		}
-	}
-	@include breakpoint(max-sm) {
-		padding: 20px 20px;
-		transform: translateY(0px);
-		margin-top: 0px;
-		position: relative;
-		gap: 12px 24px;
-		justify-content: center;
-		.custom-counter-item {
-			h2,
-			span {
-				font-size: 34px;
-				font-weight: 700;
-				color: $n900-clr;
+		.company-infowrapper {
+			background: $bg-color;
+			border-radius: 10px 0 0 10px;
+			padding: 40px 20px 40px 20px;
+			margin-top: 0;
+			.box {
+				max-width: 590px;
 			}
-		}
-		.line{
-			display: none;
+			.progress_bar_item .item_bar {
+				background: #d9e0ef;
+				border-radius: 100px;
+				height: 10px;
+			}
+			.progress_bar_item .item_bar .progress {
+				border-radius: 100px;
+				background: linear-gradient(90deg, #5135ff 0%, #ff5455 100%);
+				height: 10px;
+			}
 		}
 	}
 }
-//Counter Custom
+
