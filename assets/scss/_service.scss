@@ -11,27 +11,85 @@
 			}
 			&:hover {
 				background: $p1-clr;
-				i{
+				i {
 					color: $white;
 				}
 			}
 		}
 	}
+	.container {
+		max-width: 1630px;
+		margin: 0 auto;
+	}
 }
 .gateway-items {
 	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	&::before{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		content: "";
+		background: rgba(3, 23, 64, 0.55);
+		transition: all 0.4s;
+	}
 	.content {
 		width: 290px;
 		height: 290px;
 		padding: 24px;
 		position: absolute;
-		bottom: 18px;
-		right: 18px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0);
 		border: 1px solid $white;
 		border-radius: 50%;
-		.box-inner{
+		transition: all 0.4s;
+		.box-inner {
 			width: 240px;
 			height: 240px;
+		}
+	}
+	.arrow {
+		width: 56px;
+		height: 56px;
+		min-width: 56px;
+		transition: all 0.4s;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%) rotate(-20deg);
+		&:hover {
+			background: $white !important;
+			i {
+				color: $black !important;
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.content {
+			width: 200px;
+			height: 200px;
+			padding: 14px;
+			.box-inner {
+				width: 168px;
+				height: 168px;
+			}
+		}
+		.arrow {
+			width: 46px;
+			height: 46px;
+			min-width: 46px;
+		}
+	}
+	&:hover{
+		.content{
+			transform: translate(-50%, -50%) scale(1);
+		}
+		&::before{
+			width: 100%;
 		}
 	}
 }
@@ -70,3 +128,4 @@
 	}
 }
 //Student Service
+

@@ -61,6 +61,23 @@ CSS TABLE OF CONTENTS
 			}
 		});
 
+		//faq item
+		const accordionItems = document.querySelectorAll(".accordion-item");
+
+		accordionItems.forEach((item) => {
+			item.addEventListener("click", function () {
+				// Remove 'active' class from all other accordion items
+				accordionItems.forEach((otherItem) => {
+					if (otherItem !== this) {
+						otherItem.classList.remove("active");
+					}
+				});
+
+				// Toggle 'active' class on the clicked item
+				this.classList.toggle("active");
+			});
+		});
+
 		//--Pricing Switcher
 		const switchElement = document.querySelector(".switch");
 
@@ -191,7 +208,7 @@ CSS TABLE OF CONTENTS
 
 		//>> Gateway Slider Start <<//
 		const gatewayWrapper = new Swiper(".gateway-wrapper", {
-			spaceBetween: 30,
+			spaceBetween: 24,
 			speed: 1500,
 			loop: true,
 			navigation: {
@@ -200,13 +217,16 @@ CSS TABLE OF CONTENTS
 			},
 			breakpoints: {
 				1199: {
+					slidesPerView: 4,
+				},
+				991: {
 					slidesPerView: 3,
 				},
 				767: {
 					slidesPerView: 2,
 				},
 				575: {
-					slidesPerView: 1,
+					slidesPerView: 2,
 				},
 				0: {
 					slidesPerView: 1,
