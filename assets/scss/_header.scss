@@ -392,55 +392,18 @@
 		}
 	}
 	&.header-style2 {
-		padding-top: 0;
-		.container {
-			max-width: 1350px;
-			margin: 0 auto;
-		}
+		position: absolute;
+		padding: 0;
 		.mega-menu-wrapper {
 			border-radius: 0;
-			.desktop-search {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				border: 1px solid $border-color;
-				width: 260px;
-				padding-right: 1px;
-				border-radius: 100px;
-				input {
-					width: 100%;
-					padding: 6px 10px 6px 22px;
-					color: $pra;
-					font-size: 14px;
-					outline: none;
-					border: unset;
-					background: transparent;
-				}
-				::placeholder {
-					color: $pra;
-				}
-				i {
-					margin-right: 24px;
-					color: $p3-clr;
-				}
-				@include breakpoint(max-xl) {
-					display: none;
-				}
-			}
-			.header-main {
-				padding: 18px 0;
-				@include breakpoint(max-xl) {
-					padding: 20px 0;
-				}
-			}
+			background: $white;
+			padding: 13px 28px;
 		}
-	}
-	@include breakpoint(max-xl) {
-		padding: 16px 0;
-		.header-logo {
-			max-width: 100px;
-			img {
-				width: 100%;
+		&.sticky{
+			box-shadow: none;
+			background: transparent;
+			.mega-menu-wrapper{
+				box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 			}
 		}
 	}
