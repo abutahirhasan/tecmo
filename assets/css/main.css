@@ -1498,6 +1498,28 @@ footer {
   }
 }
 
+.audit-section {
+  background: url(../../assets/img/services/audit.png) no-repeat center center;
+  background-size: cover;
+  padding: 160px 0;
+  background-attachment: fixed;
+}
+@media (max-width: 1199px) {
+  .audit-section {
+    padding: 120px 0;
+  }
+}
+@media (max-width: 991px) {
+  .audit-section {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .audit-section {
+    padding: 80px 0;
+  }
+}
+
 .faq-stresh .about-call {
   margin-left: -18px;
 }
