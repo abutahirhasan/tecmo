@@ -494,7 +494,7 @@ footer {
 }
 
 .pra {
-  color: var(--text);
+  color: var(--pra);
 }
 
 .pra2 {
@@ -502,7 +502,7 @@ footer {
 }
 
 .text {
-  color: var(--text);
+  color: var(--pra);
 }
 
 .about-section .about-thumb {
@@ -1173,8 +1173,8 @@ footer {
 }
 
 .sponsor-item {
-  max-width: 165px;
-  height: 40px;
+  max-width: 114px;
+  height: 28px;
 }
 .sponsor-item img {
   width: 100%;
@@ -1214,13 +1214,13 @@ footer {
   border-radius: 10px;
   border: 1px solid rgba(3, 23, 64, 0.15);
   padding: 12px 27px;
-  color: var(--text);
+  color: var(--pra);
   font-size: 16px;
   width: 100%;
   background: var(--bg2);
 }
 .form-grp ::placeholder {
-  color: var(--text);
+  color: var(--pra);
 }
 
 .contact-forms {
@@ -1237,11 +1237,11 @@ footer {
   border: 2px solid #ddd;
   padding: 10px 20px;
   outline: none;
-  color: var(--text);
+  color: var(--pra);
   background: transparent;
 }
 .contact-forms ::placeholder {
-  color: var(--text);
+  color: var(--pra);
 }
 @media (max-width: 767px) {
   .contact-forms {
@@ -1489,6 +1489,15 @@ footer {
   margin-left: -19px;
 }
 
+.growth-path-item .boxes {
+  max-width: 342px;
+}
+@media (max-width: 767px) {
+  .growth-path-item .boxes {
+    margin: 0 auto;
+  }
+}
+
 .faq-stresh .about-call {
   margin-left: -18px;
 }
@@ -1547,7 +1556,7 @@ footer {
 }
 .accordion-item .accordion-body p {
   font-size: 16px;
-  color: var(--text);
+  color: var(--pra);
 }
 .accordion-item.active {
   box-shadow: 0px 1px 4px 0px rgba(20, 24, 32, 0.06), 0px 6px 20px 0px rgba(20, 24, 32, 0.14);
@@ -1594,7 +1603,7 @@ footer {
 }
 .faq-getway .accordion-item .accordion-body p {
   font-size: 16px;
-  color: var(--text);
+  color: var(--pra);
 }
 .faq-getway .accordion-item .accordion-collapse.show .accordion-body {
   border-color: var(--p1-clr);
@@ -1847,7 +1856,7 @@ footer {
 .footer-widgets-wrapper .widgets-line {
   width: 1px;
   height: 226px;
-  background: var(--text);
+  background: var(--pra);
   display: block;
 }
 @media (max-width: 1199px) {
@@ -2053,7 +2062,7 @@ footer {
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
-  color: var(--text);
+  color: var(--pra);
   padding: 16px 0;
   text-align: left;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -2503,7 +2512,7 @@ footer {
   font-size: 16px;
   display: block;
   background: var(--white);
-  color: var(--text);
+  color: var(--pra);
   border-radius: 50%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -4002,7 +4011,7 @@ footer {
   display: inline-block;
   background: var(--n100-clr);
   padding: 8px 22px;
-  color: var(--text);
+  color: var(--pra);
   font-size: 14px;
   border-radius: 100px;
   transition: all 0.4s;
@@ -4025,7 +4034,7 @@ footer {
 }
 .blog-details-right .search-box form input {
   width: 100%;
-  color: var(--text);
+  color: var(--pra);
   padding: 10px 14px;
   border: unset;
   outline: none;
@@ -4036,7 +4045,7 @@ footer {
   color: var(--p1-clr);
 }
 .blog-details-right .search-box form ::placeholder {
-  color: var(--text);
+  color: var(--pra);
 }
 .blog-details-right .category-blog .cates {
   display: grid;
@@ -4130,7 +4139,7 @@ footer {
   display: inline-block;
   background: var(--n100-clr);
   padding: 8px 22px;
-  color: var(--text);
+  color: var(--pra);
   font-size: 14px;
   border-radius: 100px;
   transition: all 0.4s;
@@ -4673,7 +4682,7 @@ input.main-search-input::placeholder {
   border: unset;
 }
 .ticket-booking-content .ticket-booking-widget ::placeholder {
-  color: var(--text);
+  color: var(--pra);
 }
 @media (max-width: 575px) {
   .ticket-booking-content {

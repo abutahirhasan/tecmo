@@ -1,0 +1,11 @@
+
+//growth-path-item z
+.growth-path-item{
+	.boxes{
+		max-width: 342px;
+		@include breakpoint(max-md){
+			margin: 0 auto;
+		}
+	}
+}
+//growth-path-item z

@@ -59,7 +59,6 @@ CSS TABLE OF CONTENTS
 			} else {
 				$("#header-sticky").removeClass("sticky");
 			}
-			
 		});
 
 		function isInViewport(element) {
@@ -319,15 +318,19 @@ CSS TABLE OF CONTENTS
 			spaceBetween: 30,
 			speed: 1500,
 			loop: true,
+			autoplay: {
+				delay: 1000,
+				disableOnInteraction: false,
+			},
 			breakpoints: {
 				1199: {
-					slidesPerView: 5,
+					slidesPerView: 6,
 				},
 				767: {
-					slidesPerView: 4,
+					slidesPerView: 5,
 				},
 				575: {
-					slidesPerView: 3,
+					slidesPerView: 4,
 				},
 				0: {
 					slidesPerView: 2,
