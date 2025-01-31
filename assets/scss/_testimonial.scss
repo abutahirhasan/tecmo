@@ -74,74 +74,91 @@
 }
 //Testimonial
 
-//Testimonial 02
-.testimonial-items2 {
-	border-radius: 20px;
-	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
-	padding: 0px 0 0px 80px;
-	margin: 55px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	.quote2 {
-		margin-top: -60px;
+.testimonial-item2 {
+	h3 {
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 42px;
+		letter-spacing: -1.08px;
 	}
-	.content {
-		max-width: 700px;
-		p {
-			font-size: 28px;
-			line-height: 38px;
+	@include breakpoint(max-lg){
+		h3{
+			font-size: 18px;
+			line-height: 22px;
 		}
-	}
-	.thumb {
-		max-width: 400px;
-		img {
-			width: 100%;
-		}
-	}
-	@include breakpoint(max-xl) {
-		padding: 20px 20px 20px 20px;
-		.quote2 {
-			margin-top: 0px;
+		.quote{
 			width: 50px;
 		}
-		.content {
-			max-width: 500px;
-			p {
-				font-size: 18px;
-				line-height: 30px;
-			}
-		}
 	}
 }
-.custom-slide {
-	margin: -55px;
+.map-quote {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 100%;
+}
+.testimonial-author-wrap {
+	display: grid;
+	gap: 30px;
+	justify-content: center;
 	position: relative;
-	.array-button {
-		width: 96%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 1;
-		button {
-			background: rgba(37, 37, 37, 0.05);
-			border-color: rgba(37, 37, 37, 0.05);
+	z-index: 1;
+	.testimonial-author-inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 32px;
+		.author {
+			width: 90px;
+			height: 90px;
+			border: 4px solid #fff;
+			transition: all 0.4s;
+			img {
+				width: 100%;
+			}
 			&:hover {
-				background: $p3-clr;
+				border-color: #031740;
 			}
 		}
 	}
 	@include breakpoint(max-xl) {
-		.array-button {
-			width: initial;
-			position: initial;
-			top: 50%;
-			left: 50%;
-			transform: translate(-0%, -0%);
-			z-index: 1;
+		gap: 18px;
+		justify-content: center;
+		position: relative;
+		z-index: 1;
+		.testimonial-author-inner {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 18px;
+			.author {
+				width: 70px;
+				height: 70px;
+				border: 2px solid #fff;
+				img {
+					width: 100%;
+				}
+				&:hover {
+					border-color: #031740;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		gap: 14px;
+		justify-content: center;
+		position: relative;
+		z-index: 1;
+		.testimonial-author-inner {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 14px;
+			.author {
+				width: 60px;
+				height: 60px;
+			}
 		}
 	}
 }
-
-//Testimonial 02

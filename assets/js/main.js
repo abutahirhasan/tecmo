@@ -257,6 +257,35 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//>> Testimonial2 Slider Start <<//
+		const testimonialWrapper2 = new Swiper(".testimonial-wrapper2", {
+			spaceBetween: 20,
+			speed: 1500,
+			loop: true,
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			autoplay: {
+				delay: 1000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 1,
+				},
+				767: {
+					slidesPerView: 1,
+				},
+				575: {
+					slidesPerView: 1,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
 		//>> Gateway Slider Start <<//
 		const gatewayWrapper = new Swiper(".gateway-wrapper", {
 			spaceBetween: 24,
