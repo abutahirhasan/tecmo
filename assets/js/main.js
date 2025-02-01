@@ -186,9 +186,11 @@ CSS TABLE OF CONTENTS
 
 		//--Pricing Switcher
 		const switchElement = document.querySelector(".switch");
-		switchElement.addEventListener("click", () => {
-			switchElement.classList.toggle("active");
-		});
+		if (switchElement) {
+			switchElement.addEventListener("click", () => {
+				switchElement.classList.toggle("active");
+			});
+		}
 
 		//>> Hero-3 Slider Start <<//
 		const sliderActive1 = ".hero-slider";
