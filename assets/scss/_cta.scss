@@ -4,16 +4,17 @@
 	padding: 45px 16px;
 	gap: 48px;
 	transition: all 0.5s;
-	@include breakpoint(max-xxl){
+	@include breakpoint(max-xxl) {
 		padding: 35px 15px;
 	}
-	&:hover{
-		h4,span{
+	&:hover {
+		h4,
+		span {
 			color: $white;
 		}
 		background: $p1-clr;
-		.icon-img{
-			img{
+		.icon-img {
+			img {
 				filter: brightness(25);
 			}
 		}
@@ -24,21 +25,81 @@
 }
 //global access
 
-
 //Consulting Section
-.consulting-section{
-	background: linear-gradient(90deg, #5135FF 0%, #FF5455 100%);
+.consulting-section {
+	background: linear-gradient(90deg, #5135ff 0%, #ff5455 100%);
 }
-.customer-review{
-	.plus{
+.customer-review {
+	.plus {
 		width: 60px;
 		height: 60px;
 		min-width: 60px;
 	}
-	.review-img{
-		&:not(:first-child){
+	.review-img {
+		&:not(:first-child) {
 			margin-left: -19px;
 		}
 	}
 }
 //Consulting Section
+
+//Make Ready  Section
+.consulting-make-section {
+	background: url(../../assets/img/services/make-bg.png) no-repeat center
+		center;
+	background-size: cover;
+	padding: 90px 0;
+	background-attachment: fixed;
+	position: relative;
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			93deg,
+			rgba(81, 53, 255, 0.95) 11.83%,
+			rgba(255, 84, 85, 0.95) 88.17%
+		);
+	}
+	.consulting-wrapper {
+		position: relative;
+		padding: 20px 0;
+		z-index: 1;
+		.make-cont {
+			gap: 90px;
+			h3 {
+				font-size: 40px;
+			}
+			.cont {
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.consulting-wrapper {
+			position: relative;
+			z-index: 1;
+			.make-cont {
+				gap: 30px;
+				h3 {
+					font-size: 29px;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.consulting-wrapper {
+			position: relative;
+			z-index: 1;
+			.make-cont {
+				gap: 20px 30px;
+				h3 {
+					font-size: 29px;
+				}
+			}
+		}
+	}
+}
+//Make Ready Section

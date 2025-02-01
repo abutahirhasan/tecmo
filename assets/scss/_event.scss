@@ -44,13 +44,18 @@
 			}
 		}
 	}
-	@include breakpoint(max-xl){
-		.content{
-			span{
+	@include breakpoint(max-xl) {
+		.content {
+			span {
 				font-size: 40px;
 			}
 		}
 	}
 }
-
 //Network section
+
+//custom-images-wrapper
+.custom-images-wrapper {
+	
+}
+//custom-images-wrapper

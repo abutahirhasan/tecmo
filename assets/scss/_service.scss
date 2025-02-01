@@ -26,7 +26,7 @@
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
-	&::before{
+	&::before {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -68,6 +68,73 @@
 			}
 		}
 	}
+
+	&.style2 {
+		z-index: 1;
+		&::before {
+			width: 100%;
+			background: linear-gradient(
+				180deg,
+				rgba(3, 23, 64, 0.2) 19.62%,
+				#031740 100%
+			);
+		}
+		&::after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			content: "";
+			background: linear-gradient(
+				180deg,
+				rgba(81, 53, 255, 0) 0%,
+				#5135ff 100%
+			);
+			transition: all 0.5s;
+		}
+		.static {
+			position: absolute;
+			bottom: 36px;
+			left: 36px;
+			z-index: 1;
+			transition: all 0.4s;
+			transform: scale(1);
+		}
+		.content2 {
+			position: absolute;
+			bottom: 36px;
+			left: 36px;
+			z-index: 2;
+			// transform: scale(0);
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.5s;
+		}
+		&:hover {
+			&::after {
+				width: 100%;
+			}
+			.static {
+				transform: scale(0);
+			}
+			.content2 {
+				transform: scale(1);
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		@include breakpoint(max-xl) {
+			.content2 {
+				left: 20px;
+				bottom: 20px;
+			}
+			.static {
+				bottom: 20px;
+				left: 20px;
+			}
+		}
+	}
 	@include breakpoint(max-xxl) {
 		.content {
 			width: 200px;
@@ -84,12 +151,30 @@
 			min-width: 46px;
 		}
 	}
-	&:hover{
-		.content{
+	&:hover {
+		.content {
 			transform: translate(-50%, -50%) scale(1);
 		}
-		&::before{
+		&::before {
 			width: 100%;
+		}
+	}
+}
+.gateway-section2 {
+	.array-button {
+		button {
+			&:hover {
+				background: $p1-clr;
+				i {
+					color: $white !important;
+				}
+			}
+		}
+	}
+	.gateway-wrapper {
+		margin-right: -310px;
+		@include breakpoint(max-xxl){
+			margin-right: 0;
 		}
 	}
 }
@@ -128,4 +213,3 @@
 	}
 }
 //Student Service
-

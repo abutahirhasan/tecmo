@@ -19,6 +19,79 @@
 			}
 		}
 	}
+	&.style2 {
+		.about-thumb {
+			.about-ele {
+				position: absolute;
+				right: 100px;
+				top: 70px;
+				z-index: -1;
+				animation: updown 2s linear infinite;
+			}
+			.about-ele2{
+				position: absolute;
+				top: 70px;
+				right: 60px;
+				animation: updown 4s linear infinite;
+			}
+			@include breakpoint(max-md) {
+				padding: 16px 16px;
+				.about-ele {
+					right: 0;
+					top: 0;
+				}
+			}
+		}
+	}
+}
+//check circle progress bar
+.custom-circle-progress-bar {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	.card-custom {
+		width: 100px;
+		height: 100px;
+	}
+	.circle {
+		position: relative;
+		width: 100px;
+		height: 100px;
+		.bar {
+			canvas {
+				width: 100px;
+				height: 100px;
+			}
+		}
+		.box {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			span {
+				font-size: 20px;
+				font-weight: 600;
+				color: var(--black);
+			}
+		}
+	}
+	@include breakpoint(max-xxl){
+		gap: 16px 24px;
+	}
+	@include breakpoint(max-lg){
+		gap: 16px 24px;
+		justify-content: center;
+	}
+	@media screen and (max-width: 450px) {
+		.inner{
+			display: grid !important;
+			justify-content: center;
+			text-align: center;
+			.card-custom{
+				margin: 0 auto;
+			}
+		}
+	}
 }
 .about-content {
 	.about-information {
@@ -125,4 +198,3 @@
 		}
 	}
 }
-

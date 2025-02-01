@@ -25,48 +25,148 @@
 	}
 }
 
-
 //ticket-booking-widget
-.ticket-booking-content{
+.ticket-booking-content {
 	border-radius: 20px;
 	padding: 40px;
 	background: $p1-clr;
-	.ticket-booking-widget{
+	.ticket-booking-widget {
 		textarea,
-		.nice-select{
+		.nice-select {
 			background: rgb(255, 255, 255, 0.1);
 			border-radius: 20px;
 			padding: 12px 20px;
 			width: 100%;
 			border: unset;
 			outline: none;
-			&::after{
+			&::after {
 				right: 20px;
 				top: initial;
 			}
-			.list{
+			.list {
 				right: initial;
 				left: 0;
 				background: $white;
 				padding: 8px;
-				li{
+				li {
 					border: unset;
 				}
 			}
 		}
-		::placeholder{
+		::placeholder {
 			color: $pra;
 		}
 	}
-	@include breakpoint(max-sm){
+	@include breakpoint(max-sm) {
 		padding: 19px;
 	}
 }
-.ticket-booking-thumb{
-	@include breakpoint(max-lg){
+.ticket-booking-thumb {
+	@include breakpoint(max-lg) {
 		width: 100%;
-		img{
+		img {
 			width: 100%;
+		}
+	}
+}
+
+//business-items
+.business-items {
+	&:hover {
+		h5 {
+			a {
+				color: $p1-clr;
+			}
+		}
+	}
+}
+.business-thumbnail {
+	margin-left: -50px;
+	.line-card,
+	.box-card {
+		position: absolute;
+	}
+	.box-card {
+		position: absolute;
+		left: 0;
+		top: 120px;
+		animation: updown 2s linear infinite;
+	}
+	.line-card {
+		bottom: -50px;
+		right: 10px;
+		animation: lr 2s linear infinite;
+	}
+	@include breakpoint(max-xxl) {
+		margin-left: -50px;
+		width: 600px;
+		.mimg {
+			width: 100%;
+		}
+		.box-card {
+			left: 0;
+			top: 120px;
+			width: 180px;
+		}
+		.line-card {
+			bottom: -50px;
+			right: 10px;
+			width: 200px;
+		}
+	}
+	@include breakpoint(max-xl) {
+		margin-left: -50px;
+		width: 500px;
+		.mimg {
+			width: 100%;
+		}
+		.box-card {
+			left: 0;
+			top: 120px;
+			width: 180px;
+		}
+		.line-card {
+			bottom: -50px;
+			right: 10px;
+			width: 200px;
+		}
+	}
+	@include breakpoint(max-lg) {
+		margin-left: -0px;
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto;
+		.mimg {
+			width: 100%;
+		}
+		.box-card {
+			left: 0;
+			top: 120px;
+			width: 180px;
+		}
+		.line-card {
+			bottom: -50px;
+			right: 10px;
+			width: 200px;
+		}
+	}
+	@include breakpoint(max-sm) {
+		margin-left: -0px;
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto;
+		.mimg {
+			width: 100%;
+		}
+		.box-card {
+			left: 0;
+			top: 120px;
+			width: 120px;
+		}
+		.line-card {
+			bottom: -50px;
+			right: 10px;
+			width: 150px;
 		}
 	}
 }

@@ -52,6 +52,61 @@ CSS TABLE OF CONTENTS
 			$(".body-overlay").removeClass("opened");
 		});
 
+		// Custom Progress bar
+		let options = {
+			startAngle: -1.65,
+			size: 150,
+			value: 0,
+			thickness: 7,
+			emptyFill: "#D9D9D9",
+			fill: { gradient: ["#5135FF", "#FF5455"] },
+		};
+		$(".bar").each(function () {
+			$(this).circleProgress(options);
+		});
+		function animateProgress() {
+			let viewportTop = $(window).scrollTop();
+			let viewportBottom = viewportTop + $(window).height();
+
+			$(".bar").each(function () {
+				let elementTop = $(this).offset().top;
+				let elementBottom = elementTop + $(this).outerHeight();
+
+				// Check if the element is within the viewport (either entering from top or bottom)
+				if (
+					elementTop < viewportBottom - 50 &&
+					elementBottom > viewportTop + 50
+				) {
+					if (!$(this).data("animated")) {
+						let value = $(this)
+							.closest(".circle, .js, .node, .react")
+							.data("value");
+						$(this)
+							.circleProgress({ value: value })
+							.on(
+								"circle-animation-progress",
+								function (event, progress, stepValue) {
+									$(this)
+										.parent()
+										.find("span")
+										.text(
+											String(stepValue.toFixed(2).substr(2)) + "%"
+										);
+								}
+							);
+						$(this).data("animated", true);
+					}
+				}
+			});
+		}
+		$(".percentage1").data("value", 0.9);
+		$(".percentage2").data("value", 0.8);
+		$(".percentage3").data("value", 0.9);
+		$(".percentage4").data("value", 0.6);
+		$(window).on("scroll", animateProgress);
+		animateProgress();
+		// Custom Progress bar
+
 		//>> Sticky Header Js Start <<//
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 250) {
