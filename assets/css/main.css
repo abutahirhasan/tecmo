@@ -1520,6 +1520,23 @@ footer {
   }
 }
 
+.netwrok-items .content span {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--black);
+}
+.netwrok-items:hover {
+  border-top: 1px solid var(--p1-clr) !important;
+}
+.netwrok-items:hover .content span {
+  color: var(--p1-clr);
+}
+@media (max-width: 1199px) {
+  .netwrok-items .content span {
+    font-size: 40px;
+  }
+}
+
 .faq-stresh .about-call {
   margin-left: -18px;
 }
