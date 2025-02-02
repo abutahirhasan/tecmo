@@ -56,6 +56,46 @@
 			}
 		}
 	}
+	&.style3{
+		.news-content{
+			h4{
+				a{
+					font-size: 22px;
+				}
+			}
+		}
+		.blog-badge1{
+			width: 56px;
+			height: 56px;
+			background: $white;
+			font-size: 20px;
+			line-height: 19px;
+			font-weight: 600;
+			color: $black;
+			left: initial !important;
+			right: 0px;
+			padding: 4px;
+			span{
+				font-size: 11px !important;
+				color: #838694;
+				font-weight: 500;
+				line-height: 10px;
+			}
+		}
+		&:hover{
+			.blog-badge1{
+				background: $p1-clr !important;
+				color: $white;
+				span{
+					color: $white;
+				}
+			}
+			.common-btn{
+				background: $p3-clr;
+				color: $white;
+			}
+		}
+	}
 	&:hover {
 		box-shadow: 0px 8px 40px -10px rgba(45, 46, 83, 0.2);
 		.news-image {

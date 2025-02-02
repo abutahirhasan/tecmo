@@ -4036,6 +4036,38 @@ footer {
 .news-single-items.style2:hover .news-image .details-info {
   transform: scale(1);
 }
+.news-single-items.style3 .news-content h4 a {
+  font-size: 22px;
+}
+.news-single-items.style3 .blog-badge1 {
+  width: 56px;
+  height: 56px;
+  background: var(--white);
+  font-size: 20px;
+  line-height: 19px;
+  font-weight: 600;
+  color: var(--black);
+  left: initial !important;
+  right: 0px;
+  padding: 4px;
+}
+.news-single-items.style3 .blog-badge1 span {
+  font-size: 11px !important;
+  color: #838694;
+  font-weight: 500;
+  line-height: 10px;
+}
+.news-single-items.style3:hover .blog-badge1 {
+  background: var(--p1-clr) !important;
+  color: var(--white);
+}
+.news-single-items.style3:hover .blog-badge1 span {
+  color: var(--white);
+}
+.news-single-items.style3:hover .common-btn {
+  background: var(--p3-clr);
+  color: var(--white);
+}
 .news-single-items:hover {
   box-shadow: 0px 8px 40px -10px rgba(45, 46, 83, 0.2);
 }
@@ -5087,6 +5119,67 @@ input.main-search-input::placeholder {
     bottom: -50px;
     right: 10px;
     width: 150px;
+  }
+}
+
+.wirefram-content {
+  max-width: 655px;
+  padding-left: 100px;
+}
+.wirefram-content .business-items p {
+  max-width: 216px;
+}
+@media (max-width: 1399px) {
+  .wirefram-content {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .wirefram-content {
+    margin: 0 auto 30px;
+    max-width: 605px;
+    padding-left: 0px;
+  }
+  .wirefram-content .business-items p {
+    max-width: 216px;
+    margin: 0 auto;
+  }
+}
+
+.tesology-info-box {
+  background: var(--p3-clr);
+  border-radius: 12px;
+  padding: 40px;
+  position: absolute;
+  right: 70px;
+  bottom: 40px;
+}
+.tesology-info-box .content span {
+  font-size: 46px;
+  font-weight: 700;
+  color: var(--white);
+}
+.tesology-info-box p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--white);
+  max-width: 205px;
+}
+@media screen and (max-width: 550px) {
+  .tesology-info-box {
+    right: 10px;
+    bottom: 10px;
+    padding: 18px;
+  }
+  .tesology-info-box .content span {
+    font-size: 29px;
+    font-weight: 700;
+    color: var(--white);
+  }
+  .tesology-info-box p {
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 150px;
   }
 }
 

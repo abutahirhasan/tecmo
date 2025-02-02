@@ -171,6 +171,69 @@
 	}
 }
 
+//wirefram-content
+.wirefram-content {
+	max-width: 655px;
+	padding-left: 100px;
+	.business-items {
+		p {
+			max-width: 216px;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		padding-left: 30px;
+	}
+	@include breakpoint(max-lg) {
+		margin: 0 auto 30px;
+		max-width: 605px;
+		padding-left: 0px;
+		.business-items {
+			p {
+				max-width: 216px;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+.tesology-info-box {
+	background: $p3-clr;
+	border-radius: 12px;
+	padding: 40px;
+	position: absolute;
+	right: 70px;
+	bottom: 40px;
+	.content {
+		span {
+			font-size: 46px;
+			font-weight: 700;
+			color: $white;
+		}
+	}
+	p {
+		font-size: 20px;
+		font-weight: 400;
+		color: $white;
+		max-width: 205px;
+	}
+	@media screen and (max-width: 550px) {
+		right: 10px;
+		bottom: 10px;
+		padding: 18px;
+		.content {
+			span {
+				font-size: 29px;
+				font-weight: 700;
+				color: $white;
+			}
+		}
+		p {
+			font-size: 14px;
+			line-height: 17px;
+			max-width: 150px;
+		}
+	}
+}
+
 //not use project istems
 //Porject
 .project-items {
