@@ -5,16 +5,75 @@
 	.thumb{
 		border-radius: 10px;
 		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		&::before{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 0%;
+			content: "";
+			background: linear-gradient(180deg, rgba(3, 23, 64, 0.00) 35%, #031740 100%);
+			z-index: 1;
+			transition: all 0.4s;
+		}
 		img{
 			border-radius: 10px;
 			overflow: hidden;
 			transition: all 0.4s;
 		}
+		.social-wrapper2{
+			padding: 10px;
+			background: $p1-clr;
+			border-radius: 10px;
+			position: absolute;
+			bottom: -200px;
+			transition: all 0.4s;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 2;
+			a{
+				width: 36px;
+				height: 36px;
+				border-radius: 6px;
+				border: 2px solid rgba(255, 255, 255, 0.15);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				i{
+					color: $white;
+				}
+				svg{
+					path{
+						stroke: $white;
+						transition: all 0.4s;
+					}
+				}
+				&:hover{
+					background: $white;
+					i{
+						color: $p1-clr;
+					}
+					svg{
+						path{
+							stroke: $p1-clr;
+						}
+					}
+				}
+			}
+		}
 	}
 	&:hover{
+		.social-wrapper2{
+			bottom: 20px;
+		}
 		.thumb{
 			img{
 				transform: scale(1.05);
+			}
+			&::before{
+				height: 100%;
 			}
 		}
 	}

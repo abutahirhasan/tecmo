@@ -135,6 +135,22 @@
 			}
 		}
 	}
+	&.style3{
+		&::after{
+			background: rgba(3, 23, 64, 0.80);
+		}
+		.content2{
+			.icon{
+				width: 36px;
+				height: 36px;
+				background: $p3-clr;
+				border-radius: 50%;
+				i{
+					color: $white;
+				}
+			}
+		}
+	}
 	@include breakpoint(max-xxl) {
 		.content {
 			width: 200px;
@@ -213,3 +229,76 @@
 	}
 }
 //Student Service
+
+//Development Service
+.service-development-item{
+	padding: 94px 16px;
+	background: url(../../assets/img/services/se-img1.png) no-repeat center center;
+	background-size: cover;
+	height: 340px;
+	position: relative;
+	.right-arrow{
+		transform: rotate(-16deg);
+	}
+	.content2{
+		width: 90%;
+		height: 90%;
+		border-radius: 10px;
+		background: rgba(81, 53, 255, 0.75);
+		padding: 10px;
+		.arrosses{
+			width: 60px;
+			height: 60px;
+			min-width: 60px;
+			margin: 0 auto;
+			i{
+				color: $black;
+			}
+			transition: all 0.4s;
+			&:hover{
+				background: $p3-clr;
+				i{
+					color: $white;
+				}
+			}
+		}
+		.boxes{
+			max-width: 270px;
+			margin: 0 auto;
+		}
+	}
+	.text-statics{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		transition: all 0.4s;
+	}
+	&::after{
+		border-radius: 10px;
+		background: linear-gradient(239deg, rgba(255, 255, 255, 0.08) 17.93%, rgba(255, 255, 255, 0.02) 81.51%) !important;
+		backdrop-filter: blur(20px);
+	}
+	&::before{
+		border-radius: 10px;
+		background: linear-gradient(180deg, rgba(24, 28, 44, 0.10) 40%, #181C2C 100%);
+		z-index: -1;
+	}
+	&:hover{
+		.content2{
+			top: 16px;
+			left: 20px;
+			.img-icon{
+				filter: brightness(25);
+			}
+		}
+		.text-statics{
+			transform: scale(0);
+		}
+	}
+}
+//Development Service

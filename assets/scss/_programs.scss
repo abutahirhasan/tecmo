@@ -234,6 +234,37 @@
 	}
 }
 
+//industry-section
+.industry-section{
+	background: #031740;
+	.section-title-area{
+		p{
+			max-width: 400px;
+		}
+	}
+}
+.industry-icon{
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	padding: 28px 14px;
+	transition: all 0.4s;
+	&:hover{
+		background: $p1-clr;
+		span{
+			color: $white;
+		}
+	}
+}
+.industry-thumb-inner{
+	@include breakpoint(max-sm){
+		.thumb{
+			width: 100%;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+
 //not use project istems
 //Porject
 .project-items {
