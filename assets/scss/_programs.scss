@@ -443,7 +443,7 @@
 		border-color: $p1-clr;
 		.arrow-area {
 			.arrow-text {
-				transform: scale(1);				
+				transform: scale(1);
 				margin-left: -0px;
 			}
 			.arrows {
@@ -452,6 +452,69 @@
 				i {
 					color: $white;
 				}
+			}
+		}
+	}
+}
+
+//Project Planing
+.project-planing-wrap {
+	border-radius: 10px;
+	background: linear-gradient(92deg, #5135ff 0.32%, #ff5455 99.68%);
+	padding: 60px 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	.project-planing-item {
+		.serial {
+			width: 80px;
+			height: 80px;
+			min-width: 80px;
+			color: $white;
+			background: rgba(255, 255, 255, 0.06);
+			transition: all 0.5s;
+		}
+		.cont {
+			max-width: 210px;
+		}
+		&:hover {
+			.serial {
+				background: $white;
+				color: $p1-clr;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 30px 26px;
+		.project-planing-item {
+			.serial {
+				width: 60px;
+				height: 60px;
+				min-width: 60px;
+			}
+			.cont {
+				max-width: 210px;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding: 30px 26px;
+		justify-content: center;
+		flex-wrap: wrap;
+		.project-planing-item {
+			display: grid !important;
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+			.serial {
+				width: 60px;
+				height: 60px;
+				min-width: 60px;
+				margin: 0 auto;
+			}
+			.cont {
+				max-width: 210px;
 			}
 		}
 	}

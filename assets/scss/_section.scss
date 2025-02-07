@@ -16,6 +16,12 @@
 		letter-spacing: 1.2px;
 	}
 }
+.sub-badge4 {
+	background: linear-gradient(90deg, #5135ff 0%, #ff5455 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 .section-title-area {
 	display: flex;

@@ -5531,6 +5531,66 @@ input.main-search-input::placeholder {
   color: var(--white);
 }
 
+.project-planing-wrap {
+  border-radius: 10px;
+  background: linear-gradient(92deg, #5135ff 0.32%, #ff5455 99.68%);
+  padding: 60px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.project-planing-wrap .project-planing-item .serial {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.06);
+  transition: all 0.5s;
+}
+.project-planing-wrap .project-planing-item .cont {
+  max-width: 210px;
+}
+.project-planing-wrap .project-planing-item:hover .serial {
+  background: var(--white);
+  color: var(--p1-clr);
+}
+@media (max-width: 1199px) {
+  .project-planing-wrap {
+    padding: 30px 26px;
+  }
+  .project-planing-wrap .project-planing-item .serial {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+  .project-planing-wrap .project-planing-item .cont {
+    max-width: 210px;
+  }
+}
+@media (max-width: 991px) {
+  .project-planing-wrap {
+    padding: 30px 26px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .project-planing-wrap .project-planing-item {
+    display: grid !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .project-planing-wrap .project-planing-item .serial {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    margin: 0 auto;
+  }
+  .project-planing-wrap .project-planing-item .cont {
+    max-width: 210px;
+  }
+}
+
 .project-items {
   border-radius: 20px;
   position: relative;
@@ -5621,6 +5681,13 @@ input.main-search-input::placeholder {
     font-size: 13px;
     letter-spacing: 1.2px;
   }
+}
+
+.sub-badge4 {
+  background: linear-gradient(90deg, #5135ff 0%, #ff5455 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-title-area {
@@ -6608,4 +6675,8 @@ input.main-search-input::placeholder {
     width: 60px;
     height: 60px;
   }
+}
+
+.testimonial-item4 .big-pra {
+  max-width: 500px;
 }/*# sourceMappingURL=main.css.map */
