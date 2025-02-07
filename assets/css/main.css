@@ -2741,6 +2741,13 @@ footer {
 .header-1.header-style2.sticky .mega-menu-wrapper {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
+.header-1.style3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(3, 23, 64, 0.2);
+}
 
 .sidebar__toggle {
   cursor: pointer;
@@ -3369,6 +3376,56 @@ footer {
 }
 .banner-section-wrap .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--white);
+}
+.banner-section-wrap.style3 .banner-bg-slide {
+  background: url(../../assets/img/banner/banner3-slide1.png) no-repeat top center;
+  background-size: cover;
+  padding: 260px 0;
+}
+.banner-section-wrap.style3 .banner-bg-slide.style2 {
+  background: url(../../assets/img/banner/banner3-slide2.png) no-repeat top center;
+  background-size: cover;
+}
+.banner-section-wrap.style3 .banner-bg-slide.style3 {
+  background: url(../../assets/img/banner/banner1-slide1.png) no-repeat top center;
+  background-size: cover;
+}
+@media (max-width: 1399px) {
+  .banner-section-wrap.style3 .banner-bg-slide {
+    padding: 190px 0 200px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section-wrap.style3 .banner-bg-slide {
+    padding: 150px 0 160px;
+  }
+  .banner-section-wrap.style3 .banner-bg-slide .hero-ele1 {
+    width: 200px;
+  }
+  .banner-section-wrap.style3 .banner-bg-slide .hero-ele2 {
+    width: 200px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-section-wrap.style3 .banner-bg-slide {
+    padding: 110px 0 160px;
+  }
+  .banner-section-wrap.style3 .banner-bg-slide .hero-ele1 {
+    width: 200px;
+  }
+  .banner-section-wrap.style3 .banner-bg-slide .hero-ele2 {
+    width: 200px;
+  }
+}
+.banner-section-wrap.style3 .banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.banner-section-wrap.style3 .swiper-pagination {
+  display: flex !important;
+  top: initial !important;
+  bottom: 75px;
+  left: 28%;
 }
 @media screen and (max-width: 1650px) {
   .banner-section-wrap .swiper-pagination {

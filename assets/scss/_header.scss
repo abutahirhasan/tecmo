@@ -407,6 +407,13 @@
 			}
 		}
 	}
+	&.style3{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: rgba(3, 23, 64, 0.20);
+	}
 }
 
 .sidebar__toggle {
