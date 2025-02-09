@@ -28,7 +28,7 @@
 				z-index: -1;
 				animation: updown 2s linear infinite;
 			}
-			.about-ele2{
+			.about-ele2 {
 				position: absolute;
 				top: 70px;
 				right: 60px;
@@ -75,19 +75,19 @@
 			}
 		}
 	}
-	@include breakpoint(max-xxl){
+	@include breakpoint(max-xxl) {
 		gap: 16px 24px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		gap: 16px 24px;
 		justify-content: center;
 	}
 	@media screen and (max-width: 450px) {
-		.inner{
+		.inner {
 			display: grid !important;
 			justify-content: center;
 			text-align: center;
-			.card-custom{
+			.card-custom {
 				margin: 0 auto;
 			}
 		}
@@ -198,3 +198,54 @@
 		}
 	}
 }
+
+//About Section04
+.about-counter4 {
+	gap: 120px;
+	.counter-items {
+		.content {
+			span {
+				font-size: 80px;
+				font-weight: 800;
+				color: $p1-clr;
+				line-height: 120%;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		gap: 14px 30px;
+		.counter-items {
+			.content {
+				span {
+					font-size: 38px;
+					line-height: 120%;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		gap: 14px 20px;
+		.counter-items {
+			.content {
+				span {
+					font-size: 30px;
+					line-height: 120%;
+				}
+			}
+		}
+	}
+}
+.about-thumb4 {
+	.counter-box {
+		position: absolute;
+		.cont{
+			span{
+				font-size: 50px;
+				color: $white;
+				line-height: 120%;
+				font-weight: 700;
+			}
+		}
+	}
+}
+//About Section04

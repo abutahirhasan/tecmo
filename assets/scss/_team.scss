@@ -77,12 +77,46 @@
 			}
 		}
 	}
+	&.style4{
+		.plus-icon{
+			.icons{
+				border: 1px solid rgba(3, 23, 64, 0.20);
+			}
+			.social-wrapper{
+				width: 55px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				top: initial;
+				bottom: 110%;
+				a{
+					border: 1px solid rgba(3, 23, 64, 0.20);
+					i{
+						color: $white;
+					}
+				}
+				&::before{
+					position: absolute;
+					bottom: -14px;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 20px;
+					height: 15px;
+					content: "";
+					background: $p1-clr;
+					clip-path: polygon(47% 100%, 0 0, 100% 0);
+
+				}
+			}
+		}
+
+	}
 }
 .plus-icon {
 	position: absolute;
 	top: 35px;
 	left: 35px;
 	width: 60px;
+	z-index: 2;
 	.social-wrapper {
 		a {
 			svg {
@@ -127,7 +161,7 @@
 		}
 	}
 	&:hover {
-		// cursor: pointer;
+		cursor: pointer;
 		.social-wrapper {
 			transform: translateX(-50%);
 		}

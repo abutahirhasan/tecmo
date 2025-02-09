@@ -405,3 +405,29 @@
 	}
 }
 //Techgon Service
+
+//Customer Service
+.proted-check{
+	box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.06);
+}
+.customer-service-items{
+	svg{
+		path{
+			transition: all 0.5s;
+		}
+	}
+	&:hover{
+		.icon{
+			svg{
+				path{
+					stroke: $p3-clr;
+				}
+			}
+		}
+		a{
+			color: $p1-clr;
+		}
+	}
+}
+//Customer Service
+
