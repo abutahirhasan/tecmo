@@ -2,25 +2,25 @@
 .header-top-section {
 	position: relative;
 	z-index: 9;
-	.right-top-cont{
-		.line{
+	.right-top-cont {
+		.line {
 			width: 1px;
 			height: 20px;
-			background: #FFFFFF;
+			background: #ffffff;
 			opacity: 20%;
 		}
-		.nice-select{
+		.nice-select {
 			padding-right: 16px;
-			.current{
+			.current {
 				color: #fff;
 				font-weight: 400;
 				font-size: 14px;
 			}
-			&::after{
+			&::after {
 				border-bottom: 2px solid #fff;
 				border-right: 2px solid #fff;
 			}
-			.list{
+			.list {
 				width: 130px;
 			}
 		}
@@ -399,44 +399,57 @@
 			background: $white;
 			padding: 13px 28px;
 		}
-		&.sticky{
+		&.sticky {
 			box-shadow: none;
 			background: transparent;
-			.mega-menu-wrapper{
-				box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+			.mega-menu-wrapper {
+				box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+					rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+					rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 			}
 		}
 	}
-	&.style3{
+	&.style3 {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
-		background: rgba(3, 23, 64, 0.20);
-		.sidebar__toggle{
-			img{
+		background: rgba(3, 23, 64, 0.2);
+		.sidebar__toggle {
+			img {
 				filter: brightness(25) invert(1);
 			}
 		}
-		.search-trigger{
+		.search-trigger {
 			border-color: $white;
-			i{
+			i {
 				color: $white;
 			}
 		}
-		@include breakpoint(xl){
-			.main-menu{
-				ul{
-					li{
-						a{
+		@include breakpoint(xl) {
+			.main-menu {
+				ul {
+					li {
+						a {
 							color: $white;
 						}
 					}
 				}
 			}
 		}
-		&.sticky{
-			background: rgba(3, 23, 64, 1);			
+		&.sticky {
+			background: rgba(3, 23, 64, 1);
+		}
+	}
+	&.header-style4 {
+		.main-menu {
+			ul {
+				li {
+					a {
+						color: $black;
+					}
+				}
+			}
 		}
 	}
 }

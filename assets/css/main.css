@@ -2428,7 +2428,7 @@ footer {
 .header-top-section .right-top-cont .line {
   width: 1px;
   height: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 20%;
 }
 .header-top-section .right-top-cont .nice-select {
@@ -2820,6 +2820,9 @@ footer {
 }
 .header-1.style3.sticky {
   background: rgb(3, 23, 64);
+}
+.header-1.header-style4 .main-menu ul li a {
+  color: var(--black);
 }
 
 .sidebar__toggle {
@@ -3860,6 +3863,155 @@ footer {
     transform: translateX(-10px);
   }
 }
+.banner-section-section04 {
+  background: #f0f4fd;
+  padding-top: 70px;
+  position: relative;
+  z-index: 1;
+}
+.banner-section-section04 .banner-content h1 {
+  font-size: 110px;
+  line-height: 105%;
+  font-weight: 800;
+}
+.banner-section-section04 .banner-content .n0-border {
+  border-color: rgba(3, 23, 64, 0.15) !important;
+}
+.banner-section-section04 .business-thumbnail {
+  margin-left: 50px;
+  margin-top: -80px;
+}
+.banner-section-section04 .business-thumbnail .box-card {
+  left: 190%;
+  top: 54%;
+}
+.banner-section-section04 .business-thumbnail .line-card {
+  bottom: 80px;
+  right: -66px;
+}
+.banner-section-section04 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 1500px) {
+  .banner-section-section04 .business-thumbnail {
+    margin-left: 0px;
+    margin-top: -80px;
+  }
+  .banner-section-section04 .business-thumbnail .box-card {
+    left: 140%;
+    top: 54%;
+  }
+  .banner-section-section04 .business-thumbnail .line-card {
+    bottom: 80px;
+    right: -26px;
+  }
+}
+@media (max-width: 1399px) {
+  .banner-section-section04 .banner-content {
+    padding: 100px 0 110px;
+  }
+  .banner-section-section04 .banner-content h1 {
+    font-size: 80px;
+    line-height: 105%;
+    font-weight: 800;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-section-section04 .banner-content {
+    padding: 96px 0 110px;
+  }
+  .banner-section-section04 .banner-content h1 {
+    font-size: 80px;
+    line-height: 105%;
+    font-weight: 800;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section-section04 .banner-content {
+    padding: 85px 0 110px;
+    text-align: center;
+  }
+  .banner-section-section04 .banner-content h1 {
+    font-size: 80px;
+    line-height: 105%;
+    font-weight: 800;
+  }
+  .banner-section-section04 .business-thumbnail {
+    margin-left: 0px;
+    margin-top: -80px;
+    max-width: 100%;
+  }
+  .banner-section-section04 .business-thumbnail .box-card {
+    left: 190%;
+    top: 54%;
+    display: none;
+  }
+  .banner-section-section04 .business-thumbnail .line-card {
+    bottom: 80px;
+    right: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section-section04 .banner-content {
+    padding: 60px 0 110px;
+    text-align: center;
+  }
+  .banner-section-section04 .banner-content h1 {
+    font-size: 50px;
+    line-height: 105%;
+    font-weight: 800;
+  }
+  .banner-section-section04 .business-thumbnail {
+    margin-left: 0px;
+    margin-top: -80px;
+    max-width: 100%;
+  }
+  .banner-section-section04 .business-thumbnail .box-card {
+    left: 190%;
+    top: 54%;
+    display: none;
+  }
+  .banner-section-section04 .business-thumbnail .line-card {
+    bottom: 80px;
+    right: 0px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-section-section04 .banner-content {
+    padding: 60px 0 90px;
+    text-align: center;
+  }
+  .banner-section-section04 .banner-content .hero-badge {
+    font-size: 12px;
+  }
+  .banner-section-section04 .banner-content h1 {
+    font-size: 38px;
+    line-height: 105%;
+    font-weight: 800;
+  }
+  .banner-section-section04 .banner-content .common-btn {
+    font-size: 14px;
+    padding: 11px 16px 13px;
+  }
+  .banner-section-section04 .business-thumbnail {
+    margin-left: 0px;
+    margin-top: -80px;
+    max-width: 100%;
+  }
+  .banner-section-section04 .business-thumbnail .box-card {
+    left: 190%;
+    top: 54%;
+    display: none;
+  }
+  .banner-section-section04 .business-thumbnail .line-card {
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
 .breadcrumb-section {
   background: var(--n300-clr);
   z-index: 1;
