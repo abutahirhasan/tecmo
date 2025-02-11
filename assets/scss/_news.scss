@@ -56,15 +56,15 @@
 			}
 		}
 	}
-	&.style3{
-		.news-content{
-			h4{
-				a{
+	&.style3 {
+		.news-content {
+			h4 {
+				a {
 					font-size: 22px;
 				}
 			}
 		}
-		.blog-badge1{
+		.blog-badge1 {
 			width: 56px;
 			height: 56px;
 			background: $white;
@@ -75,22 +75,22 @@
 			left: initial !important;
 			right: 0px;
 			padding: 4px;
-			span{
+			span {
 				font-size: 11px !important;
 				color: #838694;
 				font-weight: 500;
 				line-height: 10px;
 			}
 		}
-		&:hover{
-			.blog-badge1{
+		&:hover {
+			.blog-badge1 {
 				background: $p1-clr !important;
 				color: $white;
-				span{
+				span {
 					color: $white;
 				}
 			}
-			.common-btn{
+			.common-btn {
 				background: $p3-clr;
 				color: $white;
 			}
@@ -127,6 +127,56 @@
 	}
 }
 //Blog Nesw
+
+//news-develop-wrapper
+.news-develop-wrapper {
+	border-radius: 10px;
+	background: linear-gradient(272deg, #5135ff 0.03%, #ff5455 99.97%);
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 80px 0 0;
+	.news-develop-left {
+		display: flex;
+		align-items: center;
+		gap: 100px;
+		.thumb {
+			max-width: 3006px;
+		}
+	}
+	.blog-news-lee {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+	}
+	@include breakpoint(max-lg) {
+		display: grid;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 24px;
+		text-align: center;
+		padding: 32px 19px;
+		.news-develop-left {
+			display: flex;
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			.thumb {
+				max-width: 3006px;
+				margin: 0 auto;
+				width: 100%;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+//news-develop-wrapper
 
 //---------------- not use this bottom code
 
