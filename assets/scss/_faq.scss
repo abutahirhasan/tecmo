@@ -99,38 +99,18 @@
 	}
 }
 
-
-//Not Use bottom 
-
-//faq-getway
-.faq-getway {
-	.accordion-item {
-		border-radius: 100px;
-		.accordion-header {
-			.accordion-button {
-				padding: 10px 24px;
-				border-radius: 100px;
-				border: 1px solid #090f1f;
-				&:not(.collapsed) {
-					border-color: $p1-clr;
-				}
-			}
-		}
-		.accordion-body {
-			padding: 0;
-			padding-left: 0px;
-			padding-top: 8px;
-			border-left: unset;
-			p {
-				font-size: 16px;
-				color: $pra;
-			}
-		}
-		.accordion-collapse {
-			&.show {
-				.accordion-body {
-					border-color: $p1-clr;
-				}
+.accordion-custom05{
+	gap: 34px;
+	.accordion-item{
+		padding: 0;
+		border: unset !important;
+		padding-bottom: 22px;
+		border-radius: 0 !important;
+		border-bottom: 1px solid rgba(3, 23, 64, 0.15) !important;
+		&.active{
+			box-shadow: none !important;
+			.accordion-button{
+				color: $black !important;
 			}
 		}
 	}

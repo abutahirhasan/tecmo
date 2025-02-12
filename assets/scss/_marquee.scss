@@ -90,3 +90,58 @@
 		margin-bottom: -40px;
 	}
 }
+
+//Swiper Animation Slide
+.swiper-wrapper {
+	transition-timing-function: linear !important;
+}
+
+.w-fit {
+	width: -moz-fit-content !important;
+	width: fit-content !important;
+}
+
+//Swiper SLide Text Slide
+.text-slide-adjusting{
+	position: relative;
+	.customer-shadow-left{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.customer-shadow-right{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+}
+.sponsor-text-slide {
+	margin-bottom: 12px;
+}
+.text-slide-item {
+	//style here
+	@include breakpoint(max-xxl){
+		max-width: 160px;
+		margin: 0 auto;
+		img{
+			width: 100%;
+		}
+	}
+	@include breakpoint(max-lg){
+		max-width: 130px;
+		margin: 0 auto;
+		img{
+			width: 100%;
+		}
+	}
+	@include breakpoint(max-md){
+		max-width: 100px;
+		margin: 0 auto;
+		img{
+			width: 100%;
+		}
+	}
+}
+//Swiper SLide Text Slide

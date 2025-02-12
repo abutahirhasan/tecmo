@@ -81,12 +81,12 @@
 		line-height: 42px;
 		letter-spacing: -1.08px;
 	}
-	@include breakpoint(max-lg){
-		h3{
+	@include breakpoint(max-lg) {
+		h3 {
 			font-size: 18px;
 			line-height: 22px;
 		}
-		.quote{
+		.quote {
 			width: 50px;
 		}
 	}
@@ -164,8 +164,87 @@
 }
 
 //testimonial-item4
-.testimonial-item4{
-	.big-pra{
+.testimonial-item4 {
+	.big-pra {
 		max-width: 500px;
+	}
+}
+
+//testimonial-items05
+.testimonial-items05 {
+	padding: 40px;
+	position: relative;
+	z-index: 1;
+	background: $white;
+	border: 1px solid rgba(3, 23, 64, 0.15);
+	border-radius: 10px;
+	transition: all 0.4s;
+	overflow: hidden;
+	.boxes {
+		position: relative;
+		z-index: 1;
+	}
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		content: "";
+		background: linear-gradient(123deg, #5135ff 0.39%, #ff5455 99.61%);
+		transition: all 0.5s;
+		border-radius: 10px;
+	}
+	.pra {
+		margin-bottom: 40px;
+		font-size: 17px;
+	}
+	.author {
+		width: 70px;
+		height: 70px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.testimonial-mask {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	&:hover {
+		.pra {
+			color: $white;
+		}
+		p,
+		h6 {
+			color: $white !important;
+		}
+		&::before {
+			width: 100%;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 24px;
+	}
+}
+.testimonial-wrapper05 {
+	.swiper-slide-active {
+		.testimonial-items05 {
+			.pra {
+				color: $white;
+			}
+			p,
+			h6 {
+				color: $white !important;
+			}
+			&::before {
+				width: 100%;
+			}
+		}
 	}
 }

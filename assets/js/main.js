@@ -342,6 +342,91 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//>> testimonial-wrapper05 <<//
+		const testimonialWrapper05 = new Swiper(".testimonial-wrapper05", {
+			spaceBetween: 24,
+			speed: 1500,
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				disableOnInteraction: false,
+			},
+			centeredSlides: true,
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 3,
+				},
+				991: {
+					slidesPerView: 3,
+				},
+				767: {
+					slidesPerView: 2,
+				},
+				575: {
+					slidesPerView: 1,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
+		//--Text Custom Slide
+		const sponsor__text__slide = new Swiper(".sponsor-text-slide", {
+			speed: 6000,
+			loop: true,
+			slidesPerView: "auto",
+			centeredSlides: true,
+			autoplay: {
+				delay: 1,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				991: {
+					spaceBetween: 12,
+				},
+				600: {
+					spaceBetween: 12,
+				},
+				400: {
+					spaceBetween: 12,
+				},
+				0: {
+					spaceBetween: 12,
+				},
+			},
+		});
+		//--Text Custom Slide
+		const sponsor__text__slide2 = new Swiper(".sponsor-text-slide2", {
+			speed: 6000,
+			loop: true,
+			slidesPerView: "auto",
+			centeredSlides: true,
+			autoplay: {
+				delay: 1,
+				reverseDirection: true,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				991: {
+					spaceBetween: 12,
+				},
+				600: {
+					spaceBetween: 12,
+				},
+				400: {
+					spaceBetween: 12,
+				},
+				0: {
+					spaceBetween: 12,
+				},
+			},
+		});
+
 		//>> Gateway Slider Start <<//
 		const gatewayWrapper = new Swiper(".gateway-wrapper", {
 			spaceBetween: 24,
