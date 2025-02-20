@@ -452,6 +452,11 @@
 			}
 		}
 	}
+	&.header-style5{
+		.mega-menu-wrapper{
+			background: $bg-color;
+		}
+	}
 }
 
 .sidebar__toggle {

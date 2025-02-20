@@ -203,31 +203,77 @@
 			transition: all 0.5s;
 			color: $black;
 		}
-		&:hover{
-			.icon{
+		&:hover {
+			.icon {
 				background: $black;
 				color: $white;
 			}
 		}
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		padding: 28px 26px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		padding: 28px 26px;
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 14px;
 	}
-	@include breakpoint(max-sm){
+	@include breakpoint(max-sm) {
 		padding: 28px 26px;
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 14px;
-		.studies-tep-item{
-			.icon{
+		.studies-tep-item {
+			.icon {
 				margin: 0 auto;
 			}
+		}
+	}
+}
+.studies-right-box {
+	height: 100%;
+	h4 {
+		margin-bottom: 150px;
+	}
+}
+.studies-right-inner{
+	background: url(../../assets/img/about/studies-thumb5.png) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	border-radius: 12px;
+	overflow: hidden;
+	.cont-area{
+		margin-top: 150px;
+		.cont{
+			max-width: 420px;
+		}
+	}
+	&::before{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background: linear-gradient(180deg, rgba(3, 23, 64, 0.00) 0%, #031740 100%);
+		z-index: -1;
+	}
+}
+.studies-arrows {
+	width: 40px;
+	min-width: 40px;
+	height: 40px;
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	transform: rotate(-29deg);
+	i {
+		color: $white;
+	}
+	&:hover {
+		background: $white;
+		i {
+			color: $p1-clr;
 		}
 	}
 }

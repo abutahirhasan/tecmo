@@ -1797,6 +1797,55 @@ footer {
   }
 }
 
+.studies-right-box {
+  height: 100%;
+}
+.studies-right-box h4 {
+  margin-bottom: 150px;
+}
+
+.studies-right-inner {
+  background: url(../../assets/img/about/studies-thumb5.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.studies-right-inner .cont-area {
+  margin-top: 150px;
+}
+.studies-right-inner .cont-area .cont {
+  max-width: 420px;
+}
+.studies-right-inner::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(180deg, rgba(3, 23, 64, 0) 0%, #031740 100%);
+  z-index: -1;
+}
+
+.studies-arrows {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transform: rotate(-29deg);
+}
+.studies-arrows i {
+  color: var(--white);
+}
+.studies-arrows:hover {
+  background: var(--white);
+}
+.studies-arrows:hover i {
+  color: var(--p1-clr);
+}
+
 .growth-path-item .boxes {
   max-width: 342px;
 }
@@ -2934,6 +2983,9 @@ footer {
 }
 .header-1.header-style4 .main-menu ul li a {
   color: var(--black);
+}
+.header-1.header-style5 .mega-menu-wrapper {
+  background: var(--bg);
 }
 
 .sidebar__toggle {
@@ -4120,6 +4172,137 @@ footer {
   .banner-section-section04 .business-thumbnail .line-card {
     bottom: 0px;
     right: 0px;
+  }
+}
+
+.banner-section-section05 {
+  padding-top: 200px;
+}
+.banner-section-section05 .banner-wrapper5 {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.banner-section-section05 .banner-wrapper5 .contents {
+  max-width: 755px;
+}
+.banner-section-section05 .banner-wrapper5 .contents h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 76px;
+  letter-spacing: -2.8px;
+}
+.banner-section-section05 .banner-wrapper5 .line {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.banner-section-section05 .banner-wrapper5 .banner-counter5 {
+  max-width: 320px;
+  padding: 50px 50px;
+  background: linear-gradient(95deg, #5135ff 0.27%, #ff5455 99.73%);
+  clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
+}
+.banner-section-section05 .banner-thumb5 {
+  margin-top: -160px;
+}
+@media (max-width: 1199px) {
+  .banner-section-section05 {
+    padding-top: 150px;
+  }
+  .banner-section-section05 .banner-wrapper5 {
+    display: flex;
+    gap: 22px;
+  }
+  .banner-section-section05 .banner-wrapper5 .contents {
+    max-width: 600px;
+  }
+  .banner-section-section05 .banner-wrapper5 .contents h1 {
+    font-size: 50px;
+    line-height: 56px;
+    letter-spacing: -2.8px;
+  }
+  .banner-section-section05 .banner-wrapper5 .banner-counter5 {
+    max-width: 320px;
+    padding: 30px 20px 30px 30px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section-section05 {
+    padding-top: 130px;
+  }
+  .banner-section-section05 .banner-wrapper5 {
+    display: flex;
+    gap: 22px;
+  }
+  .banner-section-section05 .banner-wrapper5 .contents {
+    max-width: 400px;
+  }
+  .banner-section-section05 .banner-wrapper5 .contents h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1.1px;
+  }
+  .banner-section-section05 .banner-wrapper5 .banner-counter5 {
+    max-width: 320px;
+    padding: 30px 20px 30px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section-section05 {
+    padding-top: 120px;
+  }
+  .banner-section-section05 .banner-wrapper5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-bottom: 30px;
+  }
+  .banner-section-section05 .banner-wrapper5 .contents {
+    max-width: 100%;
+  }
+  .banner-section-section05 .banner-wrapper5 .contents h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1.1px;
+  }
+  .banner-section-section05 .banner-wrapper5 .banner-counter5 {
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 20px 30px 30px;
+  }
+  .banner-section-section05 .banner-thumb5 {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-section-section05 .banner-thumb5 {
+    height: 250px;
+  }
+  .banner-section-section05 .banner-thumb5 img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 400px) {
+  .banner-section-section05 .banner-wrapper5 {
+    margin-bottom: 30px;
+  }
+  .banner-section-section05 .banner-wrapper5 .contents {
+    max-width: 100%;
+  }
+  .banner-section-section05 .banner-wrapper5 .contents h1 {
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: -1.1px;
+  }
+  .banner-section-section05 .banner-wrapper5 .banner-counter5 {
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 20px 30px 30px;
   }
 }
 
