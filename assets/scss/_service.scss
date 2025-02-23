@@ -431,3 +431,35 @@
 }
 //Customer Service
 
+//Common Left Sidebar
+.common-left-barbox{
+	background: #F0F4FD;
+	border-radius: 10px;
+	padding: 40px 40px;
+	@include breakpoint(max-xl){
+		padding: 30px 24px;
+	}
+}
+.cate-tags{
+	background: $white;
+	padding: 24px 20px;
+	filter: drop-shadow(0px 1px 3px rgba(32, 33, 36, 0.08));
+	border-radius: 7px;
+	transition: all 0.4s;
+	&:hover{
+		background: $p1-clr;
+		color: $white;
+		i{
+			color: $white;
+		}
+	}
+	@include breakpoint(max-xl){
+		padding: 20px 20px;
+	}
+}
+.question-talk-box{
+	background: url(../../assets/img/element/support-box.png) no-repeat center center;
+	background-size: cover;
+	border-radius: 12px;
+	padding: 50px 30px;
+}

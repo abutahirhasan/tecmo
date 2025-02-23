@@ -134,6 +134,38 @@
 		min-width: 54px;
 	}
 }
+.about-list {
+	.icon {
+		background: #f0f4fd;
+		width: 21px;
+		height: 21px;
+		min-width: 21px;
+		border-radius: 50%;
+		box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+			rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	}
+}
+.quote-box1{
+	background: #F0F4FD;
+	border-radius: 12px;
+	padding: 50px 50px;
+	display: flex;
+	gap: 60px;
+	.quote{
+		width: 60px;
+		height: 50px;
+		object-fit: contain;
+	}
+	@include breakpoint(max-lg){
+		gap: 24px;
+		padding: 28px 28px;
+	}
+	@include breakpoint(max-lg){
+		gap: 24px;
+		display: grid;
+		padding: 24px 20px;
+	}
+}
 
 @keyframes updown {
 	50% {
@@ -238,8 +270,8 @@
 .about-thumb4 {
 	.counter-box {
 		position: absolute;
-		.cont{
-			span{
+		.cont {
+			span {
 				font-size: 50px;
 				color: $white;
 				line-height: 120%;
