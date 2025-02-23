@@ -7233,6 +7233,48 @@ input.main-search-input::placeholder {
   transform: translateX(-50%);
 }
 
+.team-details-content .more-details ul li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.team-details-content .more-details ul li .title {
+  font-size: 16px;
+  color: #49577A;
+  letter-spacing: 0px;
+  width: 130px;
+}
+.team-details-content .more-details ul li .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: 0px;
+}
+.team-details-content .social-icon a {
+  background: #F0F4FD;
+  border-radius: 50%;
+}
+.team-details-content .social-icon a i {
+  color: #49577A;
+}
+.team-details-content .social-icon a:hover {
+  background: var(--p1-clr);
+}
+.team-details-content .social-icon a:hover i {
+  color: var(--white);
+}
+
+.share-cmn-icon {
+  background: #F0F4FD;
+  padding: 5px 16px 6px;
+}
+
+.teco-mail-box .icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(3, 23, 64, 0.1);
+}
+
 .story-section .testimonial-items2 {
   margin: 0;
 }

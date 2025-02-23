@@ -168,6 +168,58 @@
 	}
 }
 
+//Team Details 
+.team-details-content{
+	.more-details{
+		ul{
+			li{
+				display: flex;
+				align-items: center;
+				gap: 14px;
+				.title{
+					font-size: 16px;
+					color: #49577A;
+					letter-spacing: 0px;
+					width: 130px;
+				}
+				.text{
+					font-size: 16px;
+					font-weight: 500;
+					color: $black;
+					letter-spacing: 0px;
+				}
+			}
+		}
+	}
+	.social-icon{
+		a{
+			background: #F0F4FD;
+			border-radius: 50%;
+			i{
+				color: #49577A;
+			}
+			&:hover{
+				background: $p1-clr;
+				i{
+					color: $white;
+				}
+			}
+		}
+	}
+}
+.share-cmn-icon{
+	background: #F0F4FD;
+	padding: 5px 16px 6px;
+}
+.teco-mail-box{
+	.icon{
+		width: 50px;
+		height: 50px;
+		background: rgba(3, 23, 64, 0.10);
+	}
+}
+//Team Details 
+
 //Story Section
 .story-section {
 	.testimonial-items2 {
