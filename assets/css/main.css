@@ -3213,6 +3213,10 @@ footer {
   margin-left: 100px;
 }
 
+.fs-8 {
+  font-size: 5px;
+}
+
 .ripple {
   position: relative;
 }
@@ -6355,75 +6359,38 @@ input.main-search-input::placeholder {
   }
 }
 
-.project-items {
-  border-radius: 20px;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.project-items::before {
-  position: absolute;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  content: "";
-  transition: all 0.4s;
-  top: 0;
-  border-radius: 20px;
-  background: linear-gradient(129deg, #206dff 1.55%, rgba(32, 109, 255, 0) 62.64%);
-}
-.project-items img {
-  border-radius: 20px;
-  width: 100%;
-  overflow: hidden;
-}
-.project-items .content-project {
-  position: absolute;
-  transition: all 0.4s;
-  visibility: hidden;
-  opacity: 0;
-  left: 80px;
-}
-.project-items .content-project .arrows {
-  width: 36px;
-  height: 36px;
-  border: 1px solid var(--white);
+.portfolio-details-info {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  gap: 57px;
 }
-.project-items .content-project .arrows i {
-  color: var(--white);
+.portfolio-details-info .item {
+  max-width: 193px;
 }
-.project-items:hover::before {
-  left: 0;
+.portfolio-details-info .line {
+  width: 1px;
+  height: 74px;
+  background: rgba(3, 23, 64, 0.14);
 }
-.project-items:hover .content-project {
-  position: absolute;
-  transition: all 0.4s;
-  left: 27px;
-  top: 27px;
-  visibility: visible;
-  opacity: 1;
+@media (max-width: 1399px) {
+  .portfolio-details-info {
+    gap: 30px;
+  }
 }
 @media (max-width: 991px) {
-  .project-items .content-project h3 {
-    font-size: 19px;
+  .portfolio-details-info {
+    gap: 30px;
   }
-  .project-items .content-project .arrows {
-    width: 27px;
-    height: 27px;
+  .portfolio-details-info .line {
+    display: none;
   }
-  .project-items .content-project .arrows i {
-    font-size: 12px;
+}
+@media (max-width: 767px) {
+  .portfolio-details-info {
+    gap: 20px 24px;
+    flex-wrap: wrap;
   }
-  .project-items:hover::before {
-    left: 0;
-  }
-  .project-items:hover .content-project {
-    left: 10px;
-    top: 14px;
+  .portfolio-details-info .line {
+    display: none;
   }
 }
 
