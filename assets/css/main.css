@@ -1482,6 +1482,21 @@ footer {
   }
 }
 
+.contact-from-grp input,
+.contact-from-grp textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 23, 64, 0.1);
+  background: #fff;
+  font-size: 16px;
+  color: var(--pra);
+  padding: 16px 26px;
+  outline: none;
+}
+.contact-from-grp ::placeholder {
+  color: var(--pra);
+}
+
 .contact-info-content {
   display: flex;
   align-items: center;
@@ -1513,7 +1528,7 @@ footer {
   gap: 14px;
 }
 .contact-info-tabs .nav-item .nav-link {
-  background: #F0F4FD;
+  background: #f0f4fd;
   border-radius: 10px;
   font-size: 18px;
   font-weight: 500;
@@ -5125,12 +5140,39 @@ footer {
 
 .lee-pragraph {
   padding: 30px 30px;
-  border-radius: 20px;
-  background: #efefef;
+  border-radius: 10px;
+  background: #f0f4fd;
+  display: flex;
+  gap: 18px;
+}
+.lee-pragraph .thumb {
+  min-width: 70px;
+  width: 70px;
+  height: 70px;
+}
+.lee-pragraph .social-custom a {
+  border-radius: 4px;
+  border: 1px solid rgba(3, 23, 64, 0.2);
+  width: 36px;
+  height: 36px;
+}
+.lee-pragraph .social-custom a i {
+  color: var(--p1-clr);
+}
+.lee-pragraph .social-custom a:hover {
+  background: var(--p1-clr);
+}
+.lee-pragraph .social-custom a:hover i {
+  color: var(--white);
 }
 @media (max-width: 1199px) {
   .lee-pragraph {
     padding: 20px 20px;
+  }
+}
+@media (max-width: 575px) {
+  .lee-pragraph {
+    flex-wrap: wrap;
   }
 }
 
@@ -5141,10 +5183,13 @@ footer {
 }
 .tag-social-wrap .tags li a {
   display: inline-block;
-  background: var(--n100-clr);
-  padding: 8px 22px;
-  color: var(--pra);
+  padding: 5px 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(3, 23, 64, 0.2);
+  background: #fff;
   font-size: 14px;
+  color: var(--pra);
+  font-weight: 600;
   border-radius: 100px;
   transition: all 0.4s;
 }

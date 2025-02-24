@@ -298,11 +298,11 @@
 			position: relative;
 			.array-button {
 				width: 98%;
-				button{
+				button {
 					width: 38px;
 					height: 38px;
 					line-height: 38px;
-					i{
+					i {
 						font-size: 16px;
 					}
 				}
@@ -523,10 +523,37 @@
 }
 .lee-pragraph {
 	padding: 30px 30px;
-	border-radius: 20px;
-	background: #efefef;
+	border-radius: 10px;
+	background: #f0f4fd;
+	display: flex;
+	gap: 18px;
+	.thumb {
+		min-width: 70px;
+		width: 70px;
+		height: 70px;
+	}
+	.social-custom {
+		a {
+			border-radius: 4px;
+			border: 1px solid rgba(3, 23, 64, 0.2);
+			width: 36px;
+			height: 36px;
+			i {
+				color: $p1-clr;
+			}
+			&:hover {
+				background: $p1-clr;
+				i {
+					color: $white;
+				}
+			}
+		}
+	}
 	@include breakpoint(max-xl) {
 		padding: 20px 20px;
+	}
+	@include breakpoint(max-sm) {
+		flex-wrap: wrap;
 	}
 }
 .tag-social-wrap {
@@ -537,10 +564,13 @@
 		li {
 			a {
 				display: inline-block;
-				background: $n100-clr;
-				padding: 8px 22px;
-				color: $pra;
+				padding: 5px 22px;
+				border-radius: 14px;
+				border: 1px solid rgba(3, 23, 64, 0.2);
+				background: #fff;
 				font-size: 14px;
+				color: $pra;
+				font-weight: 600;
 				border-radius: 100px;
 				transition: all 0.4s;
 				&:hover {

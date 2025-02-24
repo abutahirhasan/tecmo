@@ -109,52 +109,67 @@
 			padding: 16px 26px;
 			outline: none;
 		}
-		::placeholder{
+		::placeholder {
 			color: $pra;
 		}
 	}
-	@include breakpoint(max-xxl){
+	@include breakpoint(max-xxl) {
 		padding: 50px 50px;
 		margin-top: 40px;
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 30px 30px;
 	}
-	@include breakpoint(max-sm){
+	@include breakpoint(max-sm) {
 		padding: 28px 24px;
+	}
+}
+.contact-from-grp {
+	input,
+	textarea {
+		width: 100%;
+		border-radius: 10px;
+		border: 1px solid rgba(3, 23, 64, 0.1);
+		background: #fff;
+		font-size: 16px;
+		color: $pra;
+		padding: 16px 26px;
+		outline: none;
+	}
+	::placeholder {
+		color: $pra;
 	}
 }
 //Map area
 
-
 //contact-info-content
-.contact-info-content{
+.contact-info-content {
 	display: flex;
 	align-items: center;
 	gap: 60px;
-	.thumb{
+	.thumb {
 		max-width: 510px;
-		img{
+		img {
 			width: 100%;
 		}
 	}
-	.content{
+	.content {
 		max-width: 230px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		gap: 24px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		gap: 24px;
 		flex-wrap: wrap;
 	}
 }
-.contact-info-tabs{
+.contact-info-tabs {
 	display: grid;
 	gap: 14px;
-	.nav-item{
-		.nav-link{
-			background: #F0F4FD;
+	.nav-item {
+		.nav-link {
+			background: #f0f4fd;
 			border-radius: 10px;
 			font-size: 18px;
 			font-weight: 500;
@@ -165,7 +180,7 @@
 			text-align: start;
 			transition: all 0.4s;
 			&.active,
-			&:hover{
+			&:hover {
 				background: $p1-clr;
 				color: $white;
 			}
