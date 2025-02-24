@@ -2979,6 +2979,9 @@ footer {
 .offcanvas__info::-webkit-scrollbar {
   display: none;
 }
+.offcanvas__info .social-icon a i {
+  color: var(--black) !important;
+}
 
 .offcanvas__info.info-open {
   opacity: 1;

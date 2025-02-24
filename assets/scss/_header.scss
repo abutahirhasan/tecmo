@@ -477,6 +477,13 @@
 	&::-webkit-scrollbar {
 		display: none;
 	}
+	.social-icon{
+		a{
+			i{
+				color: $black !important;
+			}
+		}
+	}
 }
 .offcanvas__info.info-open {
 	opacity: 1;
