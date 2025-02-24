@@ -34,7 +34,7 @@
 <body>
 
     <!-- Preloader Start -->
-    <div id="preloader" class="preloader">
+    <div id="preloader" class="preloader d-none">
         <div class="animation-preloader">
             <div class="spinner">
             </div>
@@ -81,6 +81,36 @@
         <span class="cursor-dot"></span>
     </div>
     <!-- End Cursor Pointer -->
+
+    <!-- Header Top Start -->
+    <div class="header-top-section d-lg-block d-none bg-color3 py-2">
+        <div class="container">
+            <div class="sub-header-wrapper d-flex align-items-center justify-content-between">
+                <a href="#" class="d-flex align-items-center gap-2 white fs-eight">
+                    <i class="fa-regular fa-clock"></i> Monday - Friday : 8:30 AM to 6:30 PM
+                </a>
+                <div class="right-top-cont d-flex align-items-center gap-5">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-globe white"></i>
+                        <select name="language">
+                            <option value="1">English</option>
+                            <option value="2">Hindi</option>
+                            <option value="3">Spanish</option>
+                            <option value="4">Bangla</option>
+                        </select>
+                    </div>
+                    <div class="line"></div>
+                    <div class="social-custom d-flex align-items-center gap-xl-3 gap-3">
+                        <a href="#" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
+                        <a href="#" class=" black"><i class="fa-brands fa-twitter white65 fs-six"></i></a>
+                        <a href="#" class=" black"><i class="fa-brands fa-linkedin-in white65 fs-six"></i></a>
+                        <a href="#" class=" black"><i class="fa-brands fa-instagram white65 fs-six"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Top End -->
 
     <!-- Offcanvas Area Start -->
     <div class="fix-area">
@@ -164,10 +194,10 @@
     <div class="offcanvas__overlay"></div>
 
     <!-- Header Section Start -->
-    <header id="header-sticky" class="header-1 position-absolute w-100">
+    <header id="header-sticky" class="header-1 w-100">
         <div class="container">
-            <div class="mega-menu-wrapper border">
-                <div class="header-main style-2">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
                     <div class="header-left">
                         <div class="logo">
                             <a href="index.html" class="header-logo">
@@ -283,8 +313,11 @@
                         <a href="#0" class="search-trigger search-icon d-xl-block d-none fs-five">
                             <i class="fa-solid fa-magnifying-glass black"></i>
                         </a>
-                        <div class="line"></div>
-                        <div class="header__hamburger my-auto">
+                        <a href="visa-details.html"
+                            class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
+                            Get Started
+                        </a>
+                        <div class="header__hamburger my-auto d-xl-none d-block">
                             <div class="sidebar__toggle">
                                 <img src="assets/img/icon/menu.png" alt="icon">
                             </div>
@@ -298,334 +331,292 @@
     <!-- Banner Section Start -->
     <section class="breadcrumb-section position-relative fix">
         <div class="container">
-            <div class="bread-content">
-                <h2 class="black">Blog Details</h2>
+            <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html" class="p3-clr">Home</a>
                     </li>
-                    <li><i class="fa-solid fa-chevron-right p1-clr"></i></li>
-                    <li>Blog Details</li>
+                    <li class="p3-clr">/</li>
+                    <li class="white">Blog details</li>
                 </ul>
+                <h1 class="white visible-from-right">Blog details</h1>
             </div>
         </div>
-        <!-- Element -->
-        <img src="assets/img/banner/breadcrumb-ele.png" alt="img" class="inner-element">
+        <!-- bread Element -->
+        <img src="assets/img/element/bread-ele.png" alt="img" class="bread-ele">
     </section>
     <!-- Banner Section Start -->
 
-    <!-- blog Section Start-->
-    <section class="blog-details-section section-padding">
+    <!-- Blog Section Start -->
+    <section class="blog-details-section fix section-padding">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-8">
                     <div class="blog-details-left">
-                        <div class="blog-details-box style2 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="thumb position-relative mb-xxl-4 mb-3 rounded-4">
-                                <img src="assets/img/blog/blog-big4.png" alt="img" class="w-100 rounded-4">
+                        <div class="blog-details-box">
+                            <a href="#0" class="thumb1 rounded-3 w-100 mb-4">
+                                <img src="assets/img/blog/blog-details-big.png" alt="img" class="w-100 rounded-3">
+                            </a>
+                            <div class="d-flex align-items-center gap-lg-4 gap-3 mb-lg-4 mb-3 wow fadeInUp"
+                                data-wow-delay=".3s">
+                                <div class="d-flex algin-items-center gap-2">
+                                    <img src="assets/img/blog/common-richard.png" alt="img" class="rounded-circle">
+                                    <p class="fs-eight pra">Richard Patillions</p>
+                                </div>
+                                <div class="d-flex algin-items-center gap-2">
+                                    <i class="fa-regular fa-clock black mt-1"></i>
+                                    <p class="fs-eight pra">14 July, 2024</p>
+                                </div>
                             </div>
-                            <div class="content border-0 p-0">
-                                <ul class="comment-tag">
-                                    <li>
-                                        <button type="button">
-                                            <i class="fas fa-calendar-alt"></i>
-                                            October 19, 2022
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button">
-                                            <i class="fa-regular fa-user"></i>
-                                            By admin
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button">
-                                            <i class="fas fa-folder-open"></i>
-                                            Category
-                                        </button>
-                                    </li>
-                                </ul>
-                                <h2 class="mb-lg-3 mb-sm-2 mb-2 black visible-slowly-right">
-                                    Discover Global Freedom Unlock
-                                </h2>
-                                <p class="pra fs-five mb-xl-4 mb-4 pb-xxl-1">
-                                    A visa is an official document that permits entry into a specific country. It
-                                    indicates the holder's permission to stay
-                                    either temporarily or permanently. Visas are typically issued by a country's
-                                    consulate or embassy located in the
-                                    traveler's home country
+                            <div class="mb-4 pb-xl-2">
+                                <h3 class="mb-xxl-4 mb-3 wow fadeInUp" data-wow-delay=".4s">
+                                    <a href="#" class="black d-block">
+                                        Typing tutorials for kids and beginners
+                                    </a>
+                                </h3>
+                                <p class="mb-xxl-3 mb-2 pra fs-six wow fadeInUp" data-wow-delay=".5s">
+                                    IT company content is important for a number of reasons. First, it can help you
+                                    attract potential customers. When you
+                                    create content that is relevant to your target audience, you position yourself as an
+                                    expert in your field and increase
+                                    the chances that potential customers will find you. IT company content can help you
+                                    educate potential customers about
+                                    your products and services.
                                 </p>
-                                <div class="lee-pragraph p1-bg mb-4">
-                                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
-                                        <div class="cont">
-                                            <h3 class="black visible-slowly-right">Dianne Russell</h3>
-                                            <span class="pra">Medical Assistant</span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-2">
-                                            <i class="fas fa-star p2-clr"></i>
-                                            <i class="fas fa-star p2-clr"></i>
-                                            <i class="fas fa-star p2-clr"></i>
-                                            <i class="fas fa-star black"></i>
-                                            <i class="fas fa-star black"></i>
-                                        </div>
-                                    </div>
-                                    <p class="fs-seven fw_500 pra">
-                                        A visa is an official document that permits entry into a specific country. It
-                                        indicates the holder's permission to stay
-                                        either temporarily or permanently. Visas are typically
-                                    </p>
-                                </div>
-                                <div class="mb-4 pb-lg-1">
-                                    <h3 class="black visible-slowly-right mb-xxl-3 mb-2">
-                                        Unlocking Global Access
-                                    </h3>
-                                    <p class="pra fs-four">
-                                        A visa is an official document that permits entry into a specific country. It
-                                        indicates the holder's permission to stay
-                                        either temporarily or permanently. Visas are typically
-                                    </p>
-                                </div>
-                                <div class="maxzimize-text mb-4 pb-lg-1">
-                                    <ul class="listing fs-six">
-                                        <li class="d-flex fs-six align-items-center gap-xxl-3 gap-2 pra">
-                                            <i class="fas fa-angle-double-right p1-clr"></i>
-                                            Empowering Global Mobility Trusted Visas
-                                        </li>
-                                        <li class="d-flex fs-six align-items-center gap-xxl-3 gap-2 pra">
-                                            <i class="fas fa-angle-double-right p1-clr"></i>
-                                            Your Gateway to the World Seamless Travel
-                                        </li>
-                                        <li class="d-flex fs-six align-items-center gap-xxl-3 gap-2 pra">
-                                            <i class="fas fa-angle-double-right p1-clr"></i>
-                                            Your Key to International Adventures
-                                        </li>
-                                        <li class="d-flex fs-six align-items-center gap-xxl-3 gap-2 pra">
-                                            <i class="fas fa-angle-double-right p1-clr"></i>
-                                            Visa Solutions Beyond Boundaries
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p class="pra fs-four mb-4 pb-lg-2">
-                                    A visa is an official document that permits entry into a specific country. It
-                                    indicates the holder's permission to stay
-                                    either temporarily or permanently. Visas are typically
+                                <p class="pra">
+                                    We are committed to providing our clients with the highest quality IT services and
+                                    support. We understand that IT is
+                                    essential for your business, and we will work tirelessly to help you achieve your
+                                    business goals.
                                 </p>
-                                <div
-                                    class="d-flex mb-40 flex-sm-nowrap flex-wrap align-items-center gap-xxl-4 gap-xl-3 gap-2">
-                                    <div class="thumbs w-100 rounded-4">
-                                        <img src="assets/img/blog/blog-middle1.png" alt="img" class="w-100 rounded-4">
-                                    </div>
-                                    <div class="thumbs w-100 rounded-4">
-                                        <img src="assets/img/blog/blog-middle2.png" alt="img" class="w-100 rounded-4">
-                                    </div>
-                                </div>
-                                <div
-                                    class="tag-social-wrap d-flex justify-content-md-between flex-md-nowrap flex-wrap justify-content-center gap-3 align-items-center">
-                                    <div
-                                        class="tags d-flex justify-content-center justify-content-md-start align-items-center gap-xxl-4 gap-xl-3 gap-2">
-                                        <h4 class="black">Tags:</h4>
-                                        <ul class="tags justify-content-center justify-content-md-start">
-                                            <li><a href="javascript:void(0)">Easy Entry</a></li>
-                                            <li><a href="javascript:void(0)">Fly Right</a></li>
-                                            <li><a href="javascript:void(0)">Destination Docs</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="social-wrapper d-flex align-items-center">
-                                        <a href="#" class=" black"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#" class=" black"><i class="fab fa-instagram"></i></a>
-                                        <a href="#" class=" black"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="#" class=" black"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="previous-nextime d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <a href="#0" class="prev-icon rounded-circle d-center">
-                                            <i class="fas fa-arrow-left"></i>
-                                        </a>
-                                        <h4 class="black">Previous</h4>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <h4 class="black">Next</h4>
-                                        <a href="#0" class="prev-icon rounded-circle d-center">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="blog-details-reply-area mt-60 mb-60">
-                                    <h3 class="black mb-xl-4 mb-4 pb-1">2 Comment</h3>
-                                    <div class="blog-reply-box wow fadeInUp" data-wow-delay="0.4s">
-                                        <div
-                                            class="d-flex flex-sm-nowrap flex-wrap gap-2 align-items-center justify-content-between mb-3">
-                                            <div class="cont">
-                                                <h4 class="black mb-1">Chis Hawel</h4>
-                                                <p class="pra fs-seven">Designer</p>
-                                            </div>
-                                            <button type="button" class="heading-font">Reply</button>
-                                        </div>
-                                        <p class="fs-six pra">
-                                            A visa is an official document that permits entry into a specific country.
-                                            It indicates the holder's permission to stay
-                                            either temporarily or permanently. Visas are typically
-                                        </p>
-                                    </div>
-                                    <div class="blog-reply-box wow fadeInUp" data-wow-delay="0.4s">
-                                        <div
-                                            class="d-flex flex-sm-nowrap flex-wrap gap-2 align-items-center justify-content-between mb-3">
-                                            <div class="cont">
-                                                <h4 class="black mb-1">Arlene McCoy</h4>
-                                                <p class="pra fs-seven">Arlene McCoy</p>
-                                            </div>
-                                            <button type="button" class="heading-font">Reply</button>
-                                        </div>
-                                        <p class="fs-six pra">
-                                            A visa is an official document that permits entry into a specific country.
-                                            It indicates the holder's permission to stay
-                                            either temporarily or permanently. Visas are typically
-                                        </p>
-                                    </div>
-                                </div>
-                                <form action="#" class="contact-forms blog-form p-0">
-                                    <h3 class="black mb-xl-4 mb-4 pb-1">Leave A Comment</h3>
-                                    <div class="row g-lg-4 g-3">
-                                        <div class="col-lg-6">
-                                            <input type="text" placeholder="Name">
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <input type="text" placeholder="Phone">
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <select name="select">
-                                                <option value="1">Chose An Option</option>
-                                                <option value="1">Anything</option>
-                                                <option value="1">Anything</option>
-                                                <option value="1">Anything</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <textarea name="message" placeholder="Your Message" rows="5"></textarea>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <button type="button"
-                                                class="common-btn box-style first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold p1-bg overflow-hidden rounded-5 wow fadeInRight"
-                                                data-wow-delay="0.8s">
-                                                Read More
-                                                <i class="fa-solid fa-arrow-right-long last"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
+                            <ul class="about-list d-grid gap-lg-3 gap-2 mb-lg-5 mb-4">
+                                <li class="d-flex gap-2">
+                                    <span class="icon mt-1 d-center">
+                                        <i class="fa-solid fa-check p1-clr fs-eight"></i>
+                                    </span>
+                                    <p class="fs-seven fw_600 black">
+                                        Say goodbye to bank fees.
+                                    </p>
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <span class="icon mt-1 d-center">
+                                        <i class="fa-solid fa-check p1-clr fs-eight"></i>
+                                    </span>
+                                    <p class="fs-seven fw_600 black">
+                                        Leverage agile frameworks to provide
+                                    </p>
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <span class="icon mt-1 d-center">
+                                        <i class="fa-solid fa-check p1-clr fs-eight"></i>
+                                    </span>
+                                    <p class="fs-seven fw_600 black">
+                                        Capitalize on low hanging fruit
+                                    </p>
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <span class="icon mt-1 d-center">
+                                        <i class="fa-solid fa-check p1-clr fs-eight"></i>
+                                    </span>
+                                    <p class="fs-seven fw_600 black">
+                                        Deposit funds easily, securely.
+                                    </p>
+                                </li>
+                            </ul>
+                            <a href="#" class="mores wow fadeInUp" data-wow-delay=".6s">
+                                Read More
+                            </a>
                         </div>
+                        <div class="blog-details-box overflow-hidden">
+                            <div class="blog-details-slides swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#0" class="thumb1 rounded-3 w-100 mb-4">
+                                            <img src="assets/img/blog/blog-sidebar2.png" alt="img"
+                                                class="w-100 rounded-3">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="array-button">
+                                    <button type="button" class="array-prev">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                    <button type="button" class="array-next">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-lg-4 gap-3 mb-lg-4 mb-3 wow fadeInUp"
+                                data-wow-delay=".3s">
+                                <div class="d-flex algin-items-center gap-2">
+                                    <img src="assets/img/blog/common-richard.png" alt="img" class="rounded-circle">
+                                    <p class="fs-eight pra">Richard Patillions</p>
+                                </div>
+                                <div class="d-flex algin-items-center gap-2">
+                                    <i class="fa-regular fa-clock black mt-1"></i>
+                                    <p class="fs-eight pra">14 July, 2024</p>
+                                </div>
+                            </div>
+                            <div class="mb-4 pb-xl-2">
+                                <h3 class="mb-xxl-4 mb-3 wow fadeInUp" data-wow-delay=".4s">
+                                    <a href="#" class="black d-block">
+                                        Typing tutorials for kids and beginners
+                                    </a>
+                                </h3>
+                                <p class="pra fs-six wow fadeInUp" data-wow-delay=".5s">
+                                    We are committed to providing our clients with the highest quality IT services and
+                                    support. We understand that IT is
+                                    essential for your business, and we will work tirelessly to
+                                    achieve your business goals.
+                                </p>
+                            </div>
+                            <a href="#" class="mores wow fadeInUp" data-wow-delay=".6s">
+                                Read More
+                            </a>
+                        </div>
+                        <div class="blog-details-box">
+                            <div class="thumb1 rounded-3 w-100 mb-4 position-relative d-center">
+                                <img src="assets/img/blog/blog-sidebar3.png" alt="img" class="w-100 rounded-3">
+                                <a href="https://www.youtube.com/watch?v=lMJImKo-eZU"
+                                    class="portfolio-video rounded-circle d-center video-popup">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center gap-lg-4 gap-3 mb-lg-4 mb-3 wow fadeInUp"
+                                data-wow-delay=".3s">
+                                <div class="d-flex algin-items-center gap-2">
+                                    <img src="assets/img/blog/common-richard.png" alt="img" class="rounded-circle">
+                                    <p class="fs-eight pra">Richard Patillions</p>
+                                </div>
+                                <div class="d-flex algin-items-center gap-2">
+                                    <i class="fa-regular fa-clock black mt-1"></i>
+                                    <p class="fs-eight pra">14 July, 2024</p>
+                                </div>
+                            </div>
+                            <div class="mb-4 pb-xl-2">
+                                <h3 class="mb-xxl-4 mb-3 wow fadeInUp" data-wow-delay=".4s">
+                                    <a href="#" class="black d-block">
+                                        Typing tutorials for kids and beginners
+                                    </a>
+                                </h3>
+                                <p class="pra fs-six wow fadeInUp" data-wow-delay=".5s">
+                                    We are committed to providing our clients with the highest quality IT services and
+                                    support. We understand that IT is
+                                    essential for your business, and we will work tirelessly to
+                                    achieve your business goals.
+                                </p>
+                            </div>
+                            <a href="#" class="mores wow fadeInUp" data-wow-delay=".6s">
+                                Read More
+                            </a>
+                        </div>
+                        <ul class="blog-pagination">
+                            <li><a href="javascript:void(0)" class="heading-font numbers">1</a></li>
+                            <li><a href="javascript:void(0)" class="heading-font numbers">2</a></li>
+                            <li><a href="javascript:void(0)" class="heading-font numbers">3</a></li>
+                            <li>
+                                <a href="javascript:void(0)" class="heading-font next">
+                                    Next <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="blog-details-right">
-                        <div class="details-common search-box">
-                            <form action="#">
-                                <input type="text" placeholder="Search...">
+                    <div class="blog-details-right ps-xl-5">
+                        <div class=" border-0 search-box">
+                            <form action="#" class="rounded-2">
+                                <input type="text" placeholder="Enter your keywords...">
                                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </form>
                         </div>
-                        <div class="details-common search-box">
-                            <h3 class="black mb-lg-4 mb-3 visible-slowly-right">Popular Post</h3>
+                        <div class="details-common">
+                            <h3 class="black mb-lg-4 mb-3 wow fadeInUp" data-wow-delay=".4s">Latest posts</h3>
                             <div class="blog-latest">
-                                <div class="blog-latest-item wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="blog-latest-item p-xxl-3 p-2 wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="thumb rounded-2">
+                                        <img src="assets/img/blog/latest-recent1.png" alt="img" class="rounded-2">
+                                    </div>
                                     <div class="content">
-                                        <div class="d-flex align-items-center gap-2 mb-2">
-                                            <i class="fa-solid fa-calendar-days p1-clr"></i> October 19, 2024
-                                        </div>
-                                        <a href="blog-details.html" class="fs-five heading-font pra">
-                                            Explore Beyond Discover Global Freedom
+                                        <a href="blog-details.html" class="fs-seven fw_500 d-block black mb-xl-2 mb-1">
+                                            Intuitive header by choo pre-built header
                                         </a>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <i class="fa-regular fa-clock pra"></i> April 24, 2024
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="blog-latest-item wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="blog-latest-item p-xxl-3 p-2 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="thumb rounded-2">
+                                        <img src="assets/img/blog/latest-recent2.png" alt="img" class="rounded-2">
+                                    </div>
                                     <div class="content">
-                                        <div class="d-flex align-items-center gap-2 mb-2">
-                                            <i class="fa-solid fa-calendar-days p1-clr"></i> October 19, 2024
-                                        </div>
-                                        <a href="blog-details.html" class="fs-five heading-font pra">
-                                            Unlock New Horizons the Navigate Your World
+                                        <a href="blog-details.html" class="fs-seven fw_500 d-block black mb-xl-2 mb-1">
+                                            Gain deep insights into
+                                            your website traffic
                                         </a>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <i class="fa-regular fa-clock pra"></i> April 24, 2024
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="blog-latest-item wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="blog-latest-item p-xxl-3 p-2 wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="thumb rounded-2">
+                                        <img src="assets/img/blog/latest-recent3.png" alt="img" class="rounded-2">
+                                    </div>
                                     <div class="content">
-                                        <div class="d-flex align-items-center gap-2 mb-2">
-                                            <i class="fa-solid fa-calendar-days p1-clr"></i> October 19, 2024
-                                        </div>
-                                        <a href="blog-details.html" class="fs-five heading-font pra">
-                                            Empower Your Travels
-                                            Connect Across
+                                        <a href="blog-details.html" class="fs-seven fw_500 d-block black mb-xl-2 mb-1">
+                                            Starting and growing web design in 2024
                                         </a>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <i class="fa-regular fa-clock pra"></i> April 24, 2024
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="details-common category-blog">
-                            <h3 class="black mb-lg-4 mb-3 visible-slowly-right">Category</h3>
-                            <ul class="cates d-grid gap-3">
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="d-flex align-items-center justify-content-between">
-                                        <span class="d-flex fs-six black d-lg-flex align-items-center gap-xxl-3 gap-2">
-                                            <i class="fas fa-angle-double-right p1-clr"></i>
-                                            Roam Unrestricted
-                                        </span>
-                                        <span class="seri">01</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="d-flex align-items-center justify-content-between">
-                                        <span class="d-flex fs-six black d-lg-flex align-items-center gap-xxl-3 gap-2">
-                                            <i class="fas fa-angle-double-right p1-clr"></i>
-                                            Visa Wise
-                                        </span>
-                                        <span class="seri">02</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="d-flex align-items-center justify-content-between">
-                                        <span class="d-flex fs-six black d-lg-flex align-items-center gap-xxl-3 gap-2">
-                                            <i class="fas fa-angle-double-right p1-clr"></i>
-                                            Fly Right
-                                        </span>
-                                        <span class="seri">03</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="d-flex align-items-center justify-content-between">
-                                        <span class="d-flex fs-six black d-lg-flex align-items-center gap-xxl-3 gap-2">
-                                            <i class="fas fa-angle-double-right p1-clr"></i>
-                                            Destination Docs
-                                        </span>
-                                        <span class="seri">04</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="d-flex align-items-center justify-content-between">
-                                        <span class="d-flex fs-six black d-lg-flex align-items-center gap-xxl-3 gap-2">
-                                            <i class="fas fa-angle-double-right p1-clr"></i>
-                                            Globe Permit
-                                        </span>
-                                        <span class="seri">05</span>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="common-left-barbox">
+                            <h4 class="black mb-xxl-4 mb-3">
+                                Service category
+                            </h4>
+                            <div class="d-grid gap-2">
+                                <a href="#"
+                                    class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
+                                    data-wow-delay=".3s">
+                                    Data visualization <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <a href="#"
+                                    class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
+                                    data-wow-delay=".4s">
+                                    UI/UX designing <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <a href="#"
+                                    class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
+                                    data-wow-delay=".5s">
+                                    Digital marketing <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <a href="#"
+                                    class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
+                                    data-wow-delay=".6s">
+                                    Data analytics <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <a href="#"
+                                    class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
+                                    data-wow-delay=".7s">
+                                    Security system <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
                         </div>
                         <div class="details-common category-blog">
-                            <h3 class="black mb-lg-4 mb-3 visible-slowly-right">Popular Tags</h3>
+                            <h3 class="black mb-lg-4 mb-3 visible-slowly-right">Tags</h3>
                             <ul class="tags">
-                                <li><a href="javascript:void(0)">Easy Entry</a></li>
-                                <li><a href="javascript:void(0)">Fly Right</a></li>
-                                <li><a href="javascript:void(0)">Destination Docs</a></li>
-                                <li><a href="javascript:void(0)">Globe Permit</a></li>
-                                <li><a href="javascript:void(0)">Travel Visor</a></li>
-                                <li><a href="javascript:void(0)">Visa</a></li>
+                                <li><a href="javascript:void(0)">Technology</a></li>
+                                <li><a href="javascript:void(0)">Machine</a></li>
+                                <li><a href="javascript:void(0)">Ideas</a></li>
+                                <li><a href="javascript:void(0)">Solutions</a></li>
+                                <li><a href="javascript:void(0)">Recycling</a></li>
+                                <li><a href="javascript:void(0)">Hydrocarbo</a></li>
                             </ul>
                         </div>
                     </div>
@@ -635,126 +626,123 @@
     </section>
 
     <!--<< Footer Section Start >>-->
-    <footer class="footer-section blackbg fix pt-80">
+    <footer class="footer-section style blackbg fix">
         <div class="container">
-            <div class="newsletter-wrap">
-                <div class="newsletter-inner text-center">
-                    <div class="mb-4">
-                        <h2 class="white mb-2">Newsletter</h2>
-                        <p class="white fs-six">
-                            A visa is an official document that permits entry into a specific country. It indicates the
-                            holder's permission to
-                            stay
-                        </p>
-                    </div>
-                    <form action="#" class="wow fadeInDown gap-xxl-4 gap-xl-3 gap-lg-2 gap-1">
-                        <input type="email" placeholder="Your email...">
-                        <button type="button" class="subscribe">Subscribe</button>
-                    </form>
-                </div>
-            </div>
             <div class="footer-widgets-wrapper">
-                <div class="row g-lg-4 g-5 justify-content-between">
+                <div class="row g-lg-4 g-4 justify-content-between">
                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-footer-widget footer-widgets-pragraph wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="widget-head">
-                                <a href="index.html">
-                                    <img src="assets/img/logo/logo-white.png" alt="logo-img">
-                                </a>
-                            </div>
-                            <div class="footer-content">
-                                <p class="pra2 fs-eight">
-                                    A visa is an official document that permits a entry into a specific country. It
-                                    indicates
-                                    the holder's permission to
-                                    stay either
-                                </p>
-                                <div class="foot-address d-flex align-items-center gap-3 mb-xl-4 mb-3">
-                                    <div class="icon d-center rounded-circle">
-                                        <i class="fa-solid fa-location-dot white"></i>
-                                    </div>
-                                    <div class="cont">
-                                        <span class="fs-six white d-block mb-xl-2 mb-1">
-                                            Address
-                                        </span>
-                                        <h4 class="white">
-                                            <a href="#" class="white">66 Broklyant,New India</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="foot-address d-flex align-items-center gap-3">
-                                    <div class="icon d-center rounded-circle">
-                                        <i class="fa-solid fa-phone white"></i>
-                                    </div>
-                                    <div class="cont">
-                                        <span class="fs-six white d-block mb-xl-2 mb-1">
-                                            Phone Number
-                                        </span>
-                                        <h4 class="white">
-                                            <a href="#" class="white">012 345 678 9101</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-footer-widget d-flex justify-content-lg-center footer-widgets-pragraph wow fadeInUp"
-                            data-wow-delay="0.4s">
-                            <div class="boxes">
-                                <div class="widget-head">
-                                    <h3>Social Media</h3>
-                                </div>
-                                <div class="footer-content">
-                                    <p class="pra2 fs-eight">
-                                        A visa is an official document that a permits entry into a specific country. It
-                                        indicates
-                                        holder's permission
-                                    </p>
-                                    <div class="social-wrapper d-flex align-items-center">
-                                        <a href="#" class=" black"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#" class=" black"><i class="fa-brands fa-linkedin-in"></i></a>
-                                        <a href="#" class=" black"><i class="fab fa-instagram"></i></a>
-                                        <a href="#" class=" black"><i class="fa-brands fa-x"></i></a>
-                                    </div>
-                                </div>
+                        <div class="top-rated-pragraph">
+                            <h5 class="white mb-lg-5 mb-4">
+                                <span class="p3-clr">Top-rated</span> technology
+                                business idea for your success
+                            </h5>
+                            <form action="#" class="form-style1 d-flex align-items-center justify-content-between">
+                                <input type="text" placeholder="Enter your mail">
+                                <button type="button"><i class="fa-regular fa-envelope"></i></button>
+                            </form>
+                            <div class="form-check cmn-checkbox mt-3">
+                                <input class="form-check-input" type="checkbox" value="" id="mycheck">
+                                <label class="form-check-label fs-eight white65" for="mycheck">
+                                    I accept all terms and conditions
+                                </label>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="single-footer-widget d-flex justify-content-lg-center wow fadeInUp"
-                            data-wow-delay="0.5s">
+                        <div class="single-footer-widget wow fadeInUp" data-wow-delay="0.5s">
                             <div class="boxes">
                                 <div class="widget-head">
-                                    <h3>Page</h3>
+                                    <h3>Navigation</h3>
                                 </div>
                                 <ul class="list-area">
                                     <li>
                                         <a href="about.html">
-                                            About Us
+                                            About us
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="country.html">
-                                            Service
+                                        <a href="#0">
+                                            Meet our team
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="country.html">
-                                            Gallery
+                                        <a href="#0">
+                                            News and media
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">
-                                            Testimonial
+                                        <a href="#0">
+                                            Our projects
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="blog.html">
-                                            Blog And News
+                                        <a href="#0">
+                                            Contacts
                                         </a>
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget d-flex justify-content-lg-center wow fadeInUp"
+                            data-wow-delay="0.5s">
+                            <div class="boxes">
+                                <div class="widget-head">
+                                    <h3>Others page</h3>
+                                </div>
+                                <ul class="list-area">
+                                    <li>
+                                        <a href="#0">
+                                            Client support
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            Help center
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            System status
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            Feedback
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            Terms & condition
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget d-flex justify-content-lg-center wow fadeInUp"
+                            data-wow-delay="0.5s">
+                            <div class="boxes">
+                                <div class="widget-head">
+                                    <h3>Need Help?</h3>
+                                </div>
+                                <div class="list-info d-grid gap-3 mb-4">
+                                    <div class="list-info-item">
+                                        <span class="fs-eight white65 d-block">Call Us Directly</span>
+                                        <a href="#0" class="white fw-semibold">+(1) 224 676 7430</a>
+                                    </div>
+                                    <div class="list-info-item">
+                                        <span class="fs-eight white65 d-block">Need Support?</span>
+                                        <a href="#0" class="white fw-semibold">Tecmo@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="social-custom d-flex align-items-center gap-xl-4 gap-3">
+                                    <a href="#" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
+                                    <a href="#" class=" black"><i class="fa-brands fa-x white65 fs-six"></i></a>
+                                    <a href="#" class=" black"><i class="fab fa-linkedin-in white65 fs-six"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -764,27 +752,13 @@
         <div class="footer-bottom">
             <div class="container">
                 <div
-                    class="footer-wrapper d-flex flex-md-nowrap flex-wrap gap-2 align-items-center justify-content-md-between justify-content-center text-md-start text-center">
-                    <p class="cmn-white wow fadeInLeft body-font fs-six" data-wow-delay=".3s">
-                        &copy; Tecmo 2024 | All Rights Reserved
+                    class="footer-wrapper d-flex flex-md-nowrap flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center text-md-start text-center">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/img/logo/logo-white.png" alt="img">
+                    </a>
+                    <p class="white65">
+                        &copy;2025 <a href="#" class="white fw_500">Tecmo.</a> All images are for demo purposes only.
                     </p>
-                    <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
-                        <li>
-                            <a href="contact.html" class="fs-six body-font cmn-white">
-                                Terms & Condition
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="fs-six body-font cmn-white">
-                                Privacy Policy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="fs-six body-font cmn-white">
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
