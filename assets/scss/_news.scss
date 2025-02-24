@@ -219,226 +219,140 @@
 }
 //Benefit Section
 
-//---------------- not use this bottom code
-
 //Blog Details
 .blog-details-left {
-	.blog-details-box {
-		border-radius: 20px;
+	display: grid;
+	gap: 70px;
+	.thumb1 {
 		overflow: hidden;
-		padding: 40px;
-		background: $n100-clr;
-		.comment-tag {
+		display: block;
+		img {
+			overflow: hidden;
+			transition: all 0.4s;
+		}
+		&:hover {
+			img {
+				transform: scale(1.05);
+			}
+		}
+		.portfolio-video {
+			z-index: 9;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			background: $white;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.mores {
+		border-radius: 4px;
+		border: 1px solid rgba(3, 23, 64, 0.15);
+		font-size: 16px;
+		font-weight: 600;
+		color: $black;
+		text-align: center;
+		padding: 11px 24px 13px;
+		transition: all 0.4s;
+		display: inline-block;
+		&:hover {
+			background: $p3-clr;
+			color: $white;
+		}
+	}
+	h3 {
+		a {
+			font-size: 38px;
+			line-height: 46px;
+		}
+	}
+	.blog-details-slides {
+		position: relative;
+		.array-button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
 			display: flex;
-			gap: 14px 30px;
-			margin-bottom: 20px;
-			margin-top: 30px;
-			li {
-				button {
-					display: flex;
-					align-items: center;
-					gap: 8px;
-					font-size: 14px;
+			align-items: center;
+			justify-content: space-between;
+			width: 90%;
+			button {
+				background: $white;
+				border-color: $white;
+				i {
 					color: $black;
+				}
+				&:hover {
+					background: $p3-clr;
 					i {
-						color: $p1-clr;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		gap: 50px;
+		.blog-details-slides {
+			position: relative;
+			.array-button {
+				width: 98%;
+				button{
+					width: 38px;
+					height: 38px;
+					line-height: 38px;
+					i{
 						font-size: 16px;
 					}
 				}
 			}
 		}
-		.thumb {
-			overflow: hidden;
-			img {
-				overflow: hidden;
-				transition: all 0.4s;
-			}
-		}
-		.content {
-			h3 {
-				a {
-					font-size: 40px;
-					font-weight: 700;
-					line-height: 50px;
-					color: $black;
-				}
-			}
-			.common-btn {
-				border-radius: 8px;
-				color: $black;
-				font-weight: 600;
+	}
+	@include breakpoint(max-xl) {
+		gap: 40px;
+		.thumb1 {
+			.portfolio-video {
+				width: 60px;
+				height: 60px;
 				i {
-					color: $black;
-				}
-				&:hover {
-					border-color: $p3-clr;
-				}
-			}
-		}
-		&:hover {
-			.thumb {
-				overflow: hidden;
-				img {
-					transform: scale(1.05);
-				}
-			}
-			.content {
-				h2 {
-					a {
-						color: $p1-clr;
-					}
-				}
-			}
-		}
-		&.style2 {
-			padding: 0;
-			background: $white;
-			.maxzimize-text {
-				.listing {
-					display: grid;
-					flex-wrap: wrap;
-					gap: 14px;
-					grid-template-columns: repeat(2, 1fr);
-					li {
-						font-weight: 400;
-					}
-				}
-			}
-		}
-		@include breakpoint(max-xl) {
-			padding: 22px 20px;
-			.content {
-				h3 {
-					a {
-						font-size: 32px;
-						font-weight: 700;
-						line-height: 42px;
-					}
-				}
-			}
-			.comment-tag {
-				display: flex;
-				gap: 14px 30px;
-				margin-bottom: 16px;
-				margin-top: 20px;
-				li {
-					button {
-						display: flex;
-						align-items: center;
-						gap: 8px;
-						font-size: 14px;
-						color: $black;
-						i {
-							color: $p1-clr;
-							font-size: 16px;
-						}
-					}
-				}
-			}
-		}
-		@include breakpoint(max-md) {
-			padding: 22px 20px;
-			.content {
-				h3 {
-					a {
-						font-size: 24px;
-						font-weight: 700;
-						line-height: 34px;
-					}
-				}
-			}
-			.comment-tag {
-				display: flex;
-				gap: 6px 30px;
-				flex-wrap: wrap;
-				margin-bottom: 16px;
-				margin-top: 20px;
-				li {
-					button {
-						display: flex;
-						align-items: center;
-						gap: 8px;
-						font-size: 14px;
-						color: $black;
-						i {
-							color: $p1-clr;
-							font-size: 16px;
-						}
-					}
-				}
-			}
-			&.style2 {
-				.maxzimize-text {
-					.listing {
-						display: grid;
-						flex-wrap: wrap;
-						gap: 12px;
-						grid-template-columns: repeat(1, 1fr);
-						li {
-							font-weight: 400;
-						}
-					}
-				}
-			}
-		}
-		@include breakpoint(max-sm) {
-			padding: 22px 20px;
-			.content {
-				h3 {
-					a {
-						font-size: 19px;
-						font-weight: 700;
-						line-height: 18px;
-					}
-				}
-			}
-			.comment-tag {
-				display: flex;
-				gap: 6px 30px;
-				flex-wrap: wrap;
-				margin-bottom: 10px;
-				margin-top: 20px;
-				li {
-					button {
-						display: flex;
-						align-items: center;
-						gap: 8px;
-						font-size: 14px;
-						color: $black;
-						i {
-							color: $p1-clr;
-							font-size: 16px;
-						}
-					}
+					font-size: 18px;
 				}
 			}
 		}
 	}
-	display: grid;
-	gap: 40px;
-	@include breakpoint(max-xxl) {
-		gap: 30px;
+	@include breakpoint(max-lg) {
+		gap: 37px;
+		h3 {
+			a {
+				font-size: 38px;
+				line-height: 46px;
+			}
+		}
 	}
-	@include breakpoint(max-xxl) {
-		gap: 20px;
+	@include breakpoint(max-lg) {
+		h3 {
+			a {
+				font-size: 28px;
+				line-height: 36px;
+			}
+		}
 	}
 }
 .blog-pagination {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	gap: 15px;
-	margin-top: 60px;
+	gap: 6px;
 	li {
-		a {
-			width: 60px;
-			height: 60px;
+		.numbers {
+			width: 44px;
+			height: 44px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			background: $n100-clr;
-			border-radius: 50%;
-			font-size: 25px;
+			background: #f0f4fd;
+			border-radius: 8px;
+			font-size: 16px;
 			font-weight: 700;
 			color: $black;
 			transition: all 0.4s;
@@ -446,19 +360,29 @@
 				font-size: 18px;
 			}
 			&:hover {
-				background: $p1-clr;
+				background: $p3-clr;
 				color: $white;
 				i {
 					color: $white !important;
 				}
 			}
 		}
+		.next {
+			background: $p3-clr;
+			font-size: 16px;
+			display: flex;
+			align-items: center;
+			gap: 7px;
+			padding: 7px 18px;
+			border-radius: 7px;
+			color: $white;
+			font-weight: 700;
+		}
 	}
 	@include breakpoint(max-xl) {
 		gap: 10px;
-		margin-top: 40px;
 		li {
-			a {
+			.numbers {
 				width: 40px;
 				height: 40px;
 			}
@@ -469,10 +393,6 @@
 	display: grid;
 	gap: 40px;
 	.details-common {
-		border-radius: 20px;
-		background: $white;
-		border: 1px solid #e3e3e3;
-		padding: 40px 40px;
 		h4 {
 			margin-bottom: 30px;
 		}
@@ -483,12 +403,14 @@
 			li {
 				a {
 					display: inline-block;
-					background: $n100-clr;
 					padding: 8px 22px;
-					color: $pra;
-					font-size: 14px;
-					border-radius: 100px;
+					border-radius: 5px;
+					background: #f0f4fd;
+					box-shadow: 0px 1px 3px 0px rgba(3, 4, 28, 0.1);
+					color: $black;
 					transition: all 0.4s;
+					font-size: 14px;
+					font-weight: 500;
 					&:hover {
 						background: $p1-clr;
 						color: $white;
@@ -503,21 +425,21 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			border: 1px solid #e3e3e3;
-			background: $n100-clr;
+			background: #f0f4fd;
 			border-radius: 20px;
-			padding-right: 16px;
+			padding-right: 24px;
+			box-shadow: 0px 1px 3px 0px rgba(3, 4, 28, 0.1);
 			input {
 				width: 100%;
 				color: $pra;
-				padding: 10px 14px;
+				padding: 18px 24px;
 				border: unset;
 				outline: none;
 				border-radius: 20px;
 				background: transparent;
 			}
 			i {
-				color: $p1-clr;
+				color: $pra;
 			}
 			::placeholder {
 				color: $pra;
@@ -551,54 +473,51 @@
 	}
 	.blog-latest {
 		display: grid;
-		gap: 28px;
+		gap: 6px;
 		.blog-latest-item {
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
-			&:not(:last-child) {
-				border-bottom: 1px solid #e3e3e3;
-				padding-bottom: 10px;
-			}
+			gap: 24px;
+			background: #f0f4fd;
+			border-radius: 10px;
+			transition: all 0.4s;
 			.content {
+				max-width: 182px;
 				a {
-					font-weight: 800 !important;
-					font-size: 23px;
-					line-height: 32px;
+					font-weight: 600 !important;
+					line-height: 19px;
 				}
 			}
 			.thumb {
-				width: 75px;
-				height: 75px;
-				border-radius: 20px;
+				display: block;
+				width: 90px;
+				height: 90px;
+				border-radius: 10px;
 				img {
-					border-radius: 20px;
+					border-radius: 10px;
 				}
 			}
-		}
-	}
-	@include breakpoint(max-xxl) {
-		gap: 40px;
-		.details-common {
-			padding: 20px 18px;
-		}
-		.blog-latest {
-			display: grid;
-			gap: 16px;
-			.blog-latest-item {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
+			@include breakpoint(max-xl) {
+				gap: 12px;
+			}
+			&:hover {
+				background: $p1-clr;
 				.content {
 					a {
-						font-size: 18px;
-						line-height: 21px;
+						color: $white;
+					}
+					i,
+					div {
+						color: $white;
 					}
 				}
 			}
 		}
 	}
 	@include breakpoint(max-xl) {
+		gap: 30px;
+	}
+	@include breakpoint(max-lg) {
 		gap: 20px;
 	}
 }

@@ -233,6 +233,31 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//>> BLog Slider Start <<//
+		const blogDetailsSlide = new Swiper(".blog-details-slides", {
+			spaceBetween: 30,
+			speed: 1500,
+			loop: true,
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 1,
+				},
+				767: {
+					slidesPerView: 1,
+				},
+				575: {
+					slidesPerView: 1,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
 		//>> Testimonial Slider Start <<//
 		const testimonialSlider = new Swiper(".testimonial-slider", {
 			spaceBetween: 30,
