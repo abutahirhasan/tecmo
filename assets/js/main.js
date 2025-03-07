@@ -2,7 +2,7 @@
 [Master Stylesheet]
 
 Project:        Tecmo
-Author URI:     https://themeforest.net/user/templateName
+Author URI:     https://themeforest.net/user/themedox
 Version:        1.1
 File:           Js File
 Last change:    01/01/2025
