@@ -428,6 +428,16 @@
 			color: $p1-clr;
 		}
 	}
+	p{
+		@media screen and (min-width: 1199px) {
+			max-width: 229px;
+		}
+	}
+}
+.watch-custom-ele{
+	@media screen and (max-width: 991px) {
+		display: none;
+	}
 }
 //Customer Service
 

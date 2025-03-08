@@ -175,7 +175,7 @@ p {
 span {
 	font-size: 16px;
 	line-height: 25.6px;
-	letter-spacing: 2px;
+	letter-spacing: 1.2px;
 	margin: 0px;
 	@include transition;
 	@include breakpoint(max-xl){

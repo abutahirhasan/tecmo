@@ -10,7 +10,7 @@
 	}
 }
 .sub-badge {
-	letter-spacing: 3.2px;
+	letter-spacing: 2px;
 	@include breakpoint(max-lg) {
 		font-size: 13px;
 		letter-spacing: 1.2px;
@@ -152,6 +152,18 @@
 		span {
 			color: $white;
 		}
+	}
+	position: relative;
+	&::before{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 85%;
+		height: 87%;
+		border: 1px solid rgb(255, 255, 255, 20%);
+		content: "";
+		border-radius: 10px;
+		transform: translate(-50%, -50%);
 	}
 }
 //Challenge Style
